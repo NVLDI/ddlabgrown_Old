@@ -3,5 +3,34 @@
 }
 .DeliveryWidgetClient{
     display: flex;
-    margin: 20px;
+    margin: 20px 40px;
+    color:rgb(125, 125, 125);
+}
+.DeliveryWidgetClient{
+    display: flex;
+    margin: 20px 90px;
+}
+.newDeliveryForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.newDeliveryItem
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.newDeliveryItem>label{
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color:rgb(125, 125, 125);
+}
+.newDeliveryItem>input{
+    height: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
