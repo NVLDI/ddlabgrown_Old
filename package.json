@@ -6,6 +6,7 @@
     "@emotion/styled": "^11.10.5",
     "@material-ui/data-grid": "^4.0.0-alpha.37",
     "@material-ui/icons": "^4.11.3",
+    "@material-ui/utils": "^4.11.3",
     "@mui/icons-material": "^5.10.9",
     "@mui/styled-engine": "^5.10.8",
     "@testing-library/jest-dom": "^5.16.5",
