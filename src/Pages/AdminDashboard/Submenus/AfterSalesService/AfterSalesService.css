@@ -1,0 +1,7 @@
+.AfterSalesService{
+    flex: 4;
+}
+.AfterSalesServiceWidgetClient{
+    display: flex;
+    margin: 20px;
+}

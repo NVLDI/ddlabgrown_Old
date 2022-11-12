@@ -1,0 +1,7 @@
+.ProductAmend{
+    flex: 4;
+}
+.ProductAmendWidgetClient{
+    display: flex;
+    margin: 20px;
+}

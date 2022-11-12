@@ -1,0 +1,7 @@
+.InvoiceAmend{
+    flex: 4;
+}
+.InvoiceAmendWidgetClient{
+    display: flex;
+    margin: 20px;
+}

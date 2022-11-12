@@ -1,0 +1,7 @@
+.InvoiceListing{
+    flex: 4;
+}
+.InvoiceListingWidgetClient{
+    display: flex;
+    margin: 20px;
+}

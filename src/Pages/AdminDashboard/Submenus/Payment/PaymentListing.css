@@ -1,0 +1,7 @@
+.PaymentListing{
+    flex: 4;
+}
+.PaymentListingWidgetClient{
+    display: flex;
+    margin: 20px;
+}

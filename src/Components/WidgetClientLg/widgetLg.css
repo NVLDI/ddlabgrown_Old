@@ -1,0 +1,26 @@
+.widgetLg{
+    flex: 2;
+    box-shadow: 0px 0px 15px -10px rgba(8,0,0,0.47);
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(8,0,0,0.47);
+    padding: 20px;
+    color: white;
+    background-color: rgb(104, 103, 103);
+    border-radius: 10px;
+}
+.widgetLgTitle{
+    font-size: 22px;
+    font-weight: 600;
+}
+.widgetLgTable{
+    width: 100%;
+    border-spacing: 20px;
+}
+.widgetLgTh{
+    text-align: left;
+
+}
+.widgetLgMerchant{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}

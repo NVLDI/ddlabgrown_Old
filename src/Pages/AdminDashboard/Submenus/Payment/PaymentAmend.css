@@ -1,0 +1,7 @@
+.PaymentAmend{
+    flex: 4;
+}
+.PaymentAmendWidgetClient{
+    display: flex;
+    margin: 20px;
+}

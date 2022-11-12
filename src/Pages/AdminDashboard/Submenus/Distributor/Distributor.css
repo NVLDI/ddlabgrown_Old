@@ -1,0 +1,36 @@
+.Distributor{
+    flex: 4;
+}
+.DistributorClient{
+    display: flex;
+    margin: 20px 40px;
+    color:rgb(125, 125, 125);
+}
+.DistributorWidgetClient{
+    display: flex;
+    margin: 20px 90px;
+}
+.newDistributorForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.newDistributorItem
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.newDistributorItem>label{
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color:rgb(125, 125, 125);
+}
+.newDistributorItem>input{
+    height: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}

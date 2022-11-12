@@ -1,0 +1,7 @@
+.Product{
+    flex: 4;
+}
+.ProductWidgetClient{
+    display: flex;
+    margin: 20px;
+}

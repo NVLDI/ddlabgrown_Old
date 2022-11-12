@@ -1,0 +1,7 @@
+.CouponListing{
+    flex: 4;
+}
+.CouponListingWidgetClient{
+    display: flex;
+    margin: 20px;
+}

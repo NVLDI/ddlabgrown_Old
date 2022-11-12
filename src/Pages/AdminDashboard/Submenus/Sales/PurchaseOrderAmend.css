@@ -1,0 +1,7 @@
+.PurchaseOrderAmend{
+    flex: 4;
+}
+.PurchaseOrderAmendWidgetClient{
+    display: flex;
+    margin: 20px;
+}

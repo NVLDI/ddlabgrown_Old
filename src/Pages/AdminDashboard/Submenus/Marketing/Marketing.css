@@ -1,0 +1,7 @@
+.Marketing{
+    flex: 4;
+}
+.MarketingWidgetClient{
+    display: flex;
+    margin: 20px;
+}

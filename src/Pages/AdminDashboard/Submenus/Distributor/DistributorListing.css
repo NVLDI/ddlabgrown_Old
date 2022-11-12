@@ -1,0 +1,7 @@
+.DistributorListing{
+    flex: 4;
+}
+.DistributorListingWidgetClient{
+    display: flex;
+    margin: 20px;
+}

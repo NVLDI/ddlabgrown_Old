@@ -1,0 +1,7 @@
+.Sales{
+    flex: 4;
+}
+.SalesWidgetClient{
+    display: flex;
+    margin: 20px;
+}

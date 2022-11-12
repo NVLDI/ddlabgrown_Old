@@ -1,0 +1,7 @@
+.DeliveryAmend{
+    flex: 4;
+}
+.DeliveryAmendWidgetClient{
+    display: flex;
+    margin: 20px;
+}
