@@ -3,7 +3,6 @@ import {useNavigate} from "react-router-dom";
 
 export default function AdminLogin() {
   const navigate = useNavigate();
-
     const navigateDistributor = () => {
         navigate('/home');
       };
@@ -15,11 +14,11 @@ export default function AdminLogin() {
             <form className="newAdminForm">
                 <div className="newAdminItem">
                     <label>Admin</label>
-                    <input type="text" placeholder="Admin"/>
+                    <input type="text" placeholder="Admin" id="username_txt"/>
                 </div>
                 <div className="newAdminItem">
                     <label>Password</label>
-                    <input type="password" placeholder="Password"/>
+                    <input type="password" placeholder="Password" id="password_txt"/>
                 </div>
 
         <button className="button" onClick={navigateDistributor}>Submit</button>

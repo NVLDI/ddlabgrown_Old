@@ -52,7 +52,7 @@ export default function Sidebar() {
             <div className="sidebarMenu"></div>
             <h3 className="sidebarTitle">Sales</h3>
             <ul className="sidebarList">
-            <Link to="/" className='link'>
+            <Link to="/sales" className='link'>
                 <li className="sidebarListItem">
                 <Email className='sidebarIcon'/>
                 Ordering
@@ -80,7 +80,7 @@ export default function Sidebar() {
                 Coupon
                 </li>
             </Link>
-            <Link to="/" className='link'>
+            <Link to="/couponlisting" className='link'>
                 <li className="sidebarListItem">
                 <Report className='sidebarIcon'/>
                 Promotion
