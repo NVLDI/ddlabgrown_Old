@@ -1,4 +1,4 @@
-.topbar{
+.Fronttopbar{
     width: 100%;
     height: 50px;
     background-color: rgb(64, 64, 64);
@@ -6,27 +6,27 @@
     top: 0;
     z-index: 999;
 }
-.topbarWrapper{
+.FronttopbarWrapper{
     height: 100%;
     padding: 0px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.logo{
+.Frontlogo{
     font-weight: normal;
     font-size: 25px;
     color: white;
     cursor: pointer;
 }
-.topRight
+.FronttopRight
 {
     display: flex;
     align-items: center;
 }
-.topbarIconsContainer{
+.FronttopbarIconsContainer{
     position: relative;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 25px;
     color: white;
 }

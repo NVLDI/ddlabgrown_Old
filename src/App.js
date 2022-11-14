@@ -34,6 +34,7 @@ import AboutUs from "./Pages/Webpage/AboutUs/AboutUs"
 import ContactUs from "./Pages/Webpage/ContactUs/ContactUs"
 import Service from "./Pages/Webpage/Service/Service"
 import Display from './Pages/Webpage/Display/Display';
+import DistributorAmend from './Pages/AdminDashboard/Submenus/Distributor/DistributorAmend';
 function App() {
   return (
     <Router>
@@ -76,6 +77,7 @@ function App() {
       <Route exact path="/paymentAmend/:paymentAmendid" element={<PaymentAmend/>}/>
       <Route exact path="/invoiceAmend/:invoiceAmendid" element={<InvoiceAmend/>}/>
       <Route exact path="/purchaseOrderAmend/:purchaseOrderAmendid" element={<PurchaseOrderAmend/>}/>
+      <Route exact path="/distributorAmend/:distributorAmendid" element={<DistributorAmend/>}/>
       <Route path="*" element={<NotFound/>}/>
       </Routes>
     </Router>

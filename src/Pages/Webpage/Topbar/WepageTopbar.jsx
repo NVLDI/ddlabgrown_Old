@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom'
 
 export default function WepageTopbar() {
   return (
-    <div className="topbar">
-    <div className="topbarWrapper">
-      <div className="topLeft"><sapn className="logo">DD Lab Grown Diamond</sapn>
+    <div className="Fronttopbar">
+    <div className="FronttopbarWrapper">
+      <div className="FronttopLeft"><sapn className="Frontlogo">DD Lab Grown Diamond</sapn>
       </div>
-      <div className="topRight">
+      <div className="FronttopRight">
       <Link to="/adminlogin" className='link'>
-          <div className="topbarIconsContainer">
+          <div className="FronttopbarIconsContainer">
             Admin Login
           </div>
       </Link>
       <Link to="/distributorlogin" className='link'>
-          <div className="topbarIconsContainer">
-              D.Login
+          <div className="FronttopbarIconsContainer">
+              Distributor Login
           </div>
       </Link>
       </div>

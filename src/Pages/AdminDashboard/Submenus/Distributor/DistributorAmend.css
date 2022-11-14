@@ -1,0 +1,95 @@
+.Distributor{
+    flex: 4;
+}
+.container{
+    display: flex;
+    margin: 0px;
+  }
+.DistributorClient{
+    display: flex;
+    margin: 20px 40px;
+    color:rgb(125, 125, 125);
+}
+.DistributorAmendWidgetClient{
+    display: flex;
+    margin: 20px 90px;
+}
+.newDistributorForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.newDistributorItem
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.newDistributorItem>label{
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color:rgb(125, 125, 125);
+}
+.newDistributorItem>input{
+    height: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.distributorUpload>label{
+    color:rgb(125, 125, 125);
+    display: flex;
+    cursor: pointer;
+}
+.distributorImg{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+.distributorCreateButton
+{
+    width: 100px;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-left: 300px;
+    cursor: pointer;
+}
+.distributorClearButton
+{
+    width: 100px;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+.distributorCloseButton
+{
+    width: 100px;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+.container{
+    display: flex;
+    margin: 0px;
+  }

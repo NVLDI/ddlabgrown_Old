@@ -1,7 +1,13 @@
 import "./DeliveryAmend.css"
+import Sidebar from "../../../../Components/Sidebar/Sidebar";
+import Topbar from "../../../../Components/Topbar/Topbar";
 
 export default function DeliveryAmend() {
   return (
+<div>
+        <Topbar/>
+        <div className="container">
+        <Sidebar/>
     <div className="Delivery">
                     <h2 className="DeliveryWidgetClient">Delivery Amend</h2>
                     <div className="DeliveryWidgetClient">
@@ -122,6 +128,8 @@ export default function DeliveryAmend() {
                                 <input type="text" placeholder="Create By"/>
                         </div>
                         </form>
+                        </div>
+                        </div>
                         </div>
             </div>
   )

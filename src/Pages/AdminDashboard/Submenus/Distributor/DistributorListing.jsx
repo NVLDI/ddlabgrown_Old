@@ -4,6 +4,8 @@ import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 import "./DistributorListing.css"
 import Sidebar from "../../../../Components/Sidebar/Sidebar";
 import Topbar from "../../../../Components/Topbar/Topbar";
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import {Link} from "react-router-dom"
 const columns = [
   { field: 'id', headerName: 'ID', width: 100 },
   {
@@ -50,7 +52,10 @@ const columns = [
     renderCell:(params)=>{
         return(
             <>
+            <VisibilityIcon/>
+            <Link to={"/distributorAmend/"+params.row.id}>
             <button>Edit</button>
+            </Link>
             <DeleteOutlineIcon/>
             </>
         )
