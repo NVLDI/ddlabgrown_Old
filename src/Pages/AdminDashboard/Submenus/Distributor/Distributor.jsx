@@ -1,8 +1,15 @@
 import "./Distributor.css"
+import {useNavigate} from "react-router-dom";
 
 export default function Distributor(){
+        const navigate = useNavigate();
+
+    const navigateDistributor = () => {
+       
+        navigate('/Home');
+      };
     return(
-            <div className="Distributor">
+        <div className="Distributor">
                     <h2 className="DistributorClient">Distributor Registration</h2>
                     <div className="DistributorWidgetClient">
                     <form className="newDistributorForm">
@@ -95,8 +102,16 @@ export default function Distributor(){
                                 <label>Shift Code</label>
                                 <input type="text" placeholder="Shift Code"/>
                         </div>
+                        
+                       
+                        
+                        <button className="distributorCreateButton" onClick={navigateDistributor}>Create</button>
+                        <button className="distributorClearButton">Clear</button>
+                        <button className="distributorCloseButton">Close</button>
+                        
+                        
                     </form>
                     </div>
-            </div>
+                </div>
     )
 }

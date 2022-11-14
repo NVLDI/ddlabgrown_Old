@@ -29,6 +29,10 @@ import CouponAmend from './Pages/AdminDashboard/Submenus/Marketing/CouponAmend';
 import PaymentAmend from './Pages/AdminDashboard/Submenus/Payment/PaymentAmend';
 import InvoiceAmend from './Pages/AdminDashboard/Submenus/Sales/InvoiceAmend';
 import PurchaseOrderAmend from './Pages/AdminDashboard/Submenus/Sales/PurchaseOrderAmend';
+import Frontpage from './Pages/Webpage/Frontpage';
+import AdminLogin from './Pages/AdminLogin/AdminLogin';
+import DistributorLogin from './Pages/DistributorLogin/DistributorLogin';
+import AddProduct from "./Pages/AdminDashboard/Submenus/Product/Product";
 
 function App() {
   return (
@@ -37,13 +41,21 @@ function App() {
       <div className="container">
       <SideBar/>
       <Routes>
-      <Route exact path="/" element={<Home/>}/>
+      <Route exact path="/ff" element={<Frontpage/>}/>
+
+      <Route exact path = "/adminlogin" element={<AdminLogin/>}/>
+      <Route exact path ="/distributorLogin" element={<DistributorLogin/>}/>
+
+      <Route exact path="/home" element={<Home/>}/>
+
       <Route exact path="/distributor" element={<Distributor/>}/>
       <Route exact path="/sales" element={<Sales/>}/>
       <Route exact path="/marketing" element={<Marketing/>}/>
       <Route exact path="/payment" element={<Payment/>}/>
       <Route exact path="/delivery" element={<Delivery/>}/>
       <Route exact path="/aftersalesservice" element={<AfterSalesService/>}/>
+      <Route exact path="/addproduct" element={<AddProduct/>}/>
+
       <Route exact path="/distributorListing" element={<DistributorListing/>}/>
       <Route exact path="/purchaseorderlisting" element={<PurchaseOrderListing/>}/>
       <Route exact path="/afterSalesServicelisting" element={<AfterSalesServiceListing/>}/>
@@ -63,6 +75,7 @@ function App() {
       <Route path="*" element={<NotFound/>}/>
       </Routes>
       </div>
+    
     </Router>
   );
 }

@@ -8,6 +8,7 @@ import Delivery from "../../../Components/Delivery/DeliveryWidget";
 import AfterSalesService from "../../../Components/AfterSalesService/AfterSalesServiceWidget";
 export default function Home() {
     return (
+      
       <div className='home'>
           <FeaturedList/>
           <div className="homeWidgetClient">
@@ -18,5 +19,6 @@ export default function Home() {
           <Delivery/>
           <AfterSalesService/>
       </div>
+      
     )
   }

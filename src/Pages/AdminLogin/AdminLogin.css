@@ -1,0 +1,49 @@
+.AdminLogin{
+    flex: 4;
+}
+.LoginAdminClient{
+    display: flex;
+    color:rgb(125, 125, 125);
+    justify-content: center;
+}
+.AdminLoginWidgetClient{
+    display: flex;
+    justify-content: center;
+}
+.newAdminLoginForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.newAdminItem
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.newAdminItem>label{
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color:rgb(125, 125, 125);
+}
+.newAdminItem>input{
+    height: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.button{
+    background-color: rgb(125, 125, 125);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 15px 30px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}

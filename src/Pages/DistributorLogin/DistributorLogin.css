@@ -1,0 +1,48 @@
+.DistributorLogin{
+    flex: 4;
+}
+.LoginDistributorClient{
+    display: flex;
+    color:rgb(125, 125, 125);
+    justify-content: center;
+}
+.DistributorLoginWidgetClient{
+    display: flex;
+    justify-content: center;
+}
+.newDistributorLoginForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.newDistributorItem{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.newDistributorItem>label{
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color:rgb(125, 125, 125);
+}
+.newDistributorItem>input{
+    height: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.button{
+    background-color: rgb(125, 125, 125);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 15px 30px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
