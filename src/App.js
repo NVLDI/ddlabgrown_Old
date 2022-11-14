@@ -43,7 +43,7 @@ function App() {
       <Routes>
       <Route exact path="/ff" element={<Frontpage/>}/>
 
-      <Route exact path = "/adminlogin" element={<AdminLogin/>}/>
+      <Route exact path = "/" element={<AdminLogin/>}/>
       <Route exact path ="/distributorLogin" element={<DistributorLogin/>}/>
 
       <Route exact path="/home" element={<Home/>}/>
