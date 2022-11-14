@@ -95,11 +95,11 @@ export default function AfterSalesServiceListing(){
         <Sidebar/>
     <div className="AfterSalesServiceListing">
          <h3 className="AfterSalesServiceListingWidgetClient">After Sales Service Listing</h3>
-        <div style={{ height: '100%', width: '100%' }}>
+        <div style={{ height: 630, width: '100%' }}>
             <DataGrid
             rows={rows}
             columns={columns}
-            pageSize={20}
+            pageSize={10}
             checkboxSelection
             disableSelectionOnClick
         />

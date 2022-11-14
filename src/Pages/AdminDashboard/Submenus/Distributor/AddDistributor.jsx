@@ -1,6 +1,7 @@
 import "./Distributor.css"
 import {useNavigate} from "react-router-dom";
-
+import Sidebar from "../../../../Components/Sidebar/Sidebar";
+import Topbar from "../../../../Components/Topbar/Topbar";
 export default function Distributor(){
         const navigate = useNavigate();
 
@@ -9,6 +10,10 @@ export default function Distributor(){
         navigate('/Home');
       };
     return(
+        <div>
+        <Topbar/>
+        <div className="container">
+        <Sidebar/>
         <div className="Distributor">
                     <h2 className="DistributorClient">Distributor Registration</h2>
                     <div className="DistributorWidgetClient">
@@ -112,6 +117,8 @@ export default function Distributor(){
                         
                     </form>
                     </div>
+                </div>
+                </div>
                 </div>
     )
 }

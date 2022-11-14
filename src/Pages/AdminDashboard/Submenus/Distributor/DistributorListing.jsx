@@ -2,7 +2,8 @@ import * as React from 'react';
 import { DataGrid } from '@material-ui/data-grid';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 import "./DistributorListing.css"
-
+import Sidebar from "../../../../Components/Sidebar/Sidebar";
+import Topbar from "../../../../Components/Topbar/Topbar";
 const columns = [
   { field: 'id', headerName: 'ID', width: 100 },
   {
@@ -72,7 +73,10 @@ const rows = [
 
 export default function DistributorListing(){
     return(
-        
+      <div>
+      <Topbar/>
+      <div className="container">
+      <Sidebar/>
     <div className="DistributorListing">
          <h3 className="DistributorListingWidgetClient">Distributor Listing</h3>
         <div style={{ height: 600, width: '100%' }}>
@@ -83,6 +87,8 @@ export default function DistributorListing(){
             checkboxSelection
             disableSelectionOnClick
         />
+    </div>
+    </div>
     </div>
     </div>
     )

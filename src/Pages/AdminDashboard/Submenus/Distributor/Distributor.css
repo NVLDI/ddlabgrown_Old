@@ -89,3 +89,7 @@
     margin-top: 35px;
     margin-left: 10px;
 }
+.container{
+    display: flex;
+    margin: 0px;
+  }

@@ -4,6 +4,8 @@ import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 import "./ProductListing.css"
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import {Link} from "react-router-dom"
+import Sidebar from "../../../../Components/Sidebar/Sidebar";
+import Topbar from "../../../../Components/Topbar/Topbar";
 const columns = [
   { field: 'id', headerName: 'id', width: 90 },
   {
@@ -86,16 +88,22 @@ const rows = [
 
 export default function ProductListing(){
     return(
+      <div>
+        <Topbar/>
+        <div className="container">
+        <Sidebar/>
     <div className="ProductListing">
          <h3 className="ProductListingWidgetClient">Product Listing</h3>
-        <div style={{ height: 600, width: '100%' }}>
+        <div style={{ height: 630, width: '100%' }}>
             <DataGrid
             rows={rows}
             columns={columns}
-            pageSize={20}
+            pageSize={10}
             checkboxSelection
             disableSelectionOnClick
         />
+    </div>
+    </div>
     </div>
     </div>
            
