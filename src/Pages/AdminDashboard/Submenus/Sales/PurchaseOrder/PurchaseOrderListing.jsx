@@ -82,7 +82,7 @@ export default function PurchaseOrderListing(){
         <div className="container">
         <Sidebar/>
     <div className="PurchaseOrderListing">
-         <h3 className="PurchaseOrderListingWidgetClient">Purchase Order Listing</h3>
+         <h3 className="PurchaseOrderListingClient">Purchase Order Listing</h3>
         <div style={{ height: 630, width: '100%' }}>
             <DataGrid
             rows={rows}

@@ -76,7 +76,7 @@ export default function DistributorListing(){
       <div className="container">
       <Sidebar/>
     <div className="DistributorListing">
-         <h3 className="DistributorListingWidgetClient">Distributor Listing</h3>
+         <h2 className="DistributorClient">Distributor Listing</h2>
         <div style={{ height: 600, width: '100%' }}>
             <DataGrid
             rows={rows}

@@ -75,7 +75,7 @@ export default function ProductListing(){
         <div className="container">
         <Sidebar/>
     <div className="ProductListing">
-         <h3 className="ProductListingWidgetClient">Product Listing</h3>
+         <h2 className="ProductListingClient">Product Listing</h2>
         <div style={{ height: 630, width: '100%',textAlign:'justify' }}>
             <DataGrid
             rows={rows}

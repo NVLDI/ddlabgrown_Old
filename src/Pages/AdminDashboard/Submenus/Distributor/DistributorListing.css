@@ -5,6 +5,11 @@
     display: flex;
     margin: 20px;
 }
+.DistributorClient{
+  display: flex;
+  margin: 20px 40px;
+  color:rgb(125, 125, 125);
+}
 .container{
     display: flex;
     margin: 0px;

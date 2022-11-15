@@ -1,11 +1,78 @@
-.Product{
+.product{
     flex: 4;
 }
-.ProductWidgetClient{
+.productWidgetClient{
     display: flex;
-    margin: 20px;
+    margin: 20px 90px;
 }
 .container{
     display: flex;
     margin: 0px;
-  }
+}
+.productClient{
+    display: flex;
+    margin: 20px 40px;
+    color:rgb(125, 125, 125);
+}
+.productForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.newproductItem
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.newproductItem>label{
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color:rgb(125, 125, 125);
+}
+.newproductItem>input{
+    height: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.autocomplete
+{
+    height: 32px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 60;
+}
+.namedefine
+{
+    margin-top: 10px;
+}
+.CreateButton
+{
+    width: 100px;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-left: 725px;
+    cursor: pointer;
+}
+.ClearButton
+{
+    width: 100px;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 35px;
+    margin-left: 10px;
+}

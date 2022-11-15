@@ -18,3 +18,8 @@
 {
     margin-left:2px;
 }
+.PaymentListingClient{
+    display: flex;
+    margin: 20px 40px;
+    color:rgb(125, 125, 125);
+  }

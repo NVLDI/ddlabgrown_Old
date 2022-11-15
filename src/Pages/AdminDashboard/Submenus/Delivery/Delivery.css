@@ -1,18 +1,28 @@
 .Delivery{
     flex: 4;
 }
-.DeliveryWidgetClient{
+.DeliveryWidgetClient-title{
     display: flex;
     margin: 20px 40px;
     color:rgb(125, 125, 125);
+}
+.DeliveryWidgetClient-sub{
+    display: flex;
+    margin: 20px 90px;
+    color:rgb(32, 84, 255);
 }
 .DeliveryWidgetClient{
     display: flex;
     margin: 20px 90px;
 }
 .newDeliveryForm{
+    display:flexbox;
+    flex-wrap: wrap;
+}
+.newDeliveryForm-con{
     display: flex;
     flex-wrap: wrap;
+    margin-top: -20px;
 }
 .newDeliveryItem
 {
@@ -33,4 +43,54 @@
     padding: 10px;
     border: 1px solid gray;
     border-radius: 5px;
+}
+.autocomplete
+{
+    height: 32px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.autocomplete-date{
+    height: 32px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 30%;
+}
+.datepicker
+{
+    height: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.Address2{
+    margin-top: 10px;
+}
+.deliveryCreateButton
+{
+    width: 100px;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-left: 400px;
+    cursor: pointer;
+}
+.deliveryClearButton
+{
+    width: 100px;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 35px;
+    margin-left: 10px;
 }
