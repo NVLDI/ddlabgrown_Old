@@ -17,7 +17,6 @@ import ProductListing from "./Pages/AdminDashboard/Submenus/Product/ProductListi
 import ProductAmend from "./Pages/AdminDashboard/Submenus/Product/ProductAmend"
 import AfterSalesServiceAmend from "./Pages/AdminDashboard/Submenus/AfterSalesService/AfterSalesServiceAmend"
 import DeliveryAmend from './Pages/AdminDashboard/Submenus/Delivery/DeliveryAmend';
-import NotFound from "./Pages/Error/404Page"
 import {
   BrowserRouter as Router,
   Route,
@@ -78,7 +77,6 @@ function App() {
       <Route exact path="/invoiceAmend/:invoiceAmendid" element={<InvoiceAmend/>}/>
       <Route exact path="/purchaseOrderAmend/:purchaseOrderAmendid" element={<PurchaseOrderAmend/>}/>
       <Route exact path="/distributorAmend/:distributorAmendid" element={<DistributorAmend/>}/>
-      <Route path="*" element={<NotFound/>}/>
       </Routes>
     </Router>
   );
