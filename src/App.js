@@ -34,6 +34,7 @@ import ContactUs from "./Pages/Webpage/ContactUs/ContactUs"
 import Service from "./Pages/Webpage/Service/Service"
 import Display from './Pages/Webpage/Display/Display';
 import DistributorAmend from './Pages/AdminDashboard/Submenus/Distributor/DistributorAmend';
+import DistributorHomepage from './Pages/DistributorDashboard/Home/Home'
 function App() {
   return (
     <Router>
@@ -50,7 +51,7 @@ function App() {
       <Route exact path = "/service" element={<Service/>}/>
 
       <Route exact path="/home" element={<Home/>}/>
-
+      <Route exact path="/distributorHomepage" element={<DistributorHomepage/>}/>
       <Route exact path="/sales" element={<Sales/>}/>
       <Route exact path="/marketing" element={<Marketing/>}/>
       <Route exact path="/payment" element={<Payment/>}/>
