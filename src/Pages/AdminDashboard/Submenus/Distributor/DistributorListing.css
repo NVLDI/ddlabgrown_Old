@@ -9,3 +9,16 @@
     display: flex;
     margin: 0px;
   }
+  .edit{
+    font-weight: 600;
+    height: 25px;
+}
+  .icon
+{
+   margin-left:15px;
+   margin-right:5px;
+}
+.deleteicon
+{
+    margin-left:2px;
+}

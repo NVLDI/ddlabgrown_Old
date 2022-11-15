@@ -12,15 +12,15 @@ const columns = [
     field: 'action',
     headerName: 'Action',
     editable: false,
-    width: 120,
+    width: 160,
     renderCell:(params)=>{
         return(
             <>
-            <VisibilityIcon/>
+            <VisibilityIcon className='icon'/>
             <Link to={"/onlinepaymentAmend/"+params.row.id}>
-            <button>Edit</button>
+            <button className='edit'>Edit</button>
             </Link>
-            <DeleteOutlineIcon/>
+            <DeleteOutlineIcon className='deleteicon'/>
             </>
         )
     }

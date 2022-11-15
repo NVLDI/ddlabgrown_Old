@@ -15,11 +15,11 @@ const columns = [
     renderCell:(params)=>{
         return(
             <>
-            <VisibilityIcon/>
+            <VisibilityIcon className='icon'/>
             <Link to={"/distributorAmend/"+params.row.id}>
-            <button>Edit</button>
+            <button className='edit'>Edit</button>
             </Link>
-            <DeleteOutlineIcon/>
+            <DeleteOutlineIcon className='deleteicon'/>
             </>
         )
     }
