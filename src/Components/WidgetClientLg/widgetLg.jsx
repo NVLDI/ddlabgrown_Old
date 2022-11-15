@@ -16,51 +16,6 @@ export default function widgetLg() {
           <th className="widgetLgTh">Amend By</th>
           <th className="widgetLgTh">Amend Date</th>
         </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgDate">5th jun 2021</td>
-          <td className="widgetLgPurchaseNo">C0097865</td>
-          <td className="widgetLgProductCode">BE-10001</td>
-          <td className="widgetLgProductDescription">This Diamond is Blue Eyes </td>
-          <td className="widgetLgCreatedBy">Maria Li</td>
-          <td className="widgetLgAmendBy">Maria Li</td>
-          <td className="widgetLgAmendDate">5th Jun 2021</td>
-        </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgDate">5th jun 2021</td>
-          <td className="widgetLgPurchaseNo">C0097865</td>
-          <td className="widgetLgProductCode">BE-10001</td>
-          <td className="widgetLgProductDescription">This Diamond is Blue Eyes </td>
-          <td className="widgetLgCreatedBy">Maria Li</td>
-          <td className="widgetLgAmendBy">Maria Li</td>
-          <td className="widgetLgAmendDate">5th Jun 2021</td>
-        </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgDate">5th jun 2021</td>
-          <td className="widgetLgPurchaseNo">C0097865</td>
-          <td className="widgetLgProductCode">BE-10001</td>
-          <td className="widgetLgProductDescription">This Diamond is Blue Eyes </td>
-          <td className="widgetLgCreatedBy">Maria Li</td>
-          <td className="widgetLgAmendBy">Maria Li</td>
-          <td className="widgetLgAmendDate">5th Jun 2021</td>
-        </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgDate">5th jun 2021</td>
-          <td className="widgetLgPurchaseNo">C0097865</td>
-          <td className="widgetLgProductCode">BE-10001</td>
-          <td className="widgetLgProductDescription">This Diamond is Blue Eyes </td>
-          <td className="widgetLgCreatedBy">Maria Li</td>
-          <td className="widgetLgAmendBy">Maria Li</td>
-          <td className="widgetLgAmendDate">5th Jun 2021</td>
-        </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgDate">5th jun 2021</td>
-          <td className="widgetLgPurchaseNo">C0097865</td>
-          <td className="widgetLgProductCode">BE-10001</td>
-          <td className="widgetLgProductDescription">This Diamond is Blue Eyes </td>
-          <td className="widgetLgCreatedBy">Maria Li</td>
-          <td className="widgetLgAmendBy">Maria Li</td>
-          <td className="widgetLgAmendDate">5th Jun 2021</td>
-        </tr>
       </table>
     </div>
   )

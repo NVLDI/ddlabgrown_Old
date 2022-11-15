@@ -15,51 +15,6 @@ export default function AfterSalesServiceWidget() {
           <th className="widgetLgTh">Payment Type</th>
           <th className="widgetLgTh">Status</th>
         </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgTranc">000111232937287</td>
-          <td className="widgetLgDate">5th jun 2021</td>
-          <td className="widgetLgInvoiceNo">INV-000100</td>
-          <td className="widgetLgDistributorNo">DO-0000006</td>
-          <td className="widgetLgDeliveryMethod">Offline</td>
-          <td className="widgetLgPaymentType">Cash</td>
-          <td className="widgetLgAmendDate">Pending</td>
-        </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgTranc">000111232937287</td>
-          <td className="widgetLgDate">5th jun 2021</td>
-          <td className="widgetLgInvoiceNo">INV-000100</td>
-          <td className="widgetLgDistributorNo">DO-0000006</td>
-          <td className="widgetLgDeliveryMethod">Offline</td>
-          <td className="widgetLgPaymentType">Cash</td>
-          <td className="widgetLgAmendDate">Pending</td>
-        </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgTranc">000111232937287</td>
-          <td className="widgetLgDate">5th jun 2021</td>
-          <td className="widgetLgInvoiceNo">INV-000100</td>
-          <td className="widgetLgDistributorNo">DO-0000006</td>
-          <td className="widgetLgDeliveryMethod">Offline</td>
-          <td className="widgetLgPaymentType">Cash</td>
-          <td className="widgetLgAmendDate">Pending</td>
-        </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgTranc">000111232937287</td>
-          <td className="widgetLgDate">5th jun 2021</td>
-          <td className="widgetLgInvoiceNo">INV-000100</td>
-          <td className="widgetLgDistributorNo">DO-0000006</td>
-          <td className="widgetLgDeliveryMethod">Offline</td>
-          <td className="widgetLgPaymentType">Cash</td>
-          <td className="widgetLgAmendDate">Pending</td>
-        </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgTranc">000111232937287</td>
-          <td className="widgetLgDate">5th jun 2021</td>
-          <td className="widgetLgInvoiceNo">INV-000100</td>
-          <td className="widgetLgDistributorNo">DO-0000006</td>
-          <td className="widgetLgDeliveryMethod">Offline</td>
-          <td className="widgetLgPaymentType">Cash</td>
-          <td className="widgetLgAmendDate">Pending</td>
-        </tr>
       </table>
     </div>
   )

@@ -18,54 +18,7 @@ export default function MarketingWidget() {
           <th className="widgetLgTh">Total</th>
           <th className="widgetLgTh">Create By</th>
         </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgTranc">CO-9237</td>
-          <td className="widgetLgDate">5/07/2021</td>
-          <td className="widgetLgDate">5/07/2021</td>
-          <td className="widgetLgInvoiceNo">INV-000100</td>
-          <td className="widgetLgDistributorNo">DO-0000006</td>
-          <td className="widgetLgInvoiceAmount">10000</td>
-          <td className="widgetLgDiscountType">5%</td>
-          <td className="widgetLgDiscountAmount">-500</td>
-          <td className="widgetLgTotal">9500</td>
-          <td className="widgetLgCreateBy">Maria</td>
-        </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgTranc">CO-9237</td>
-          <td className="widgetLgDate">5/07/2021</td>
-          <td className="widgetLgDate">5/07/2021</td>
-          <td className="widgetLgInvoiceNo">INV-000100</td>
-          <td className="widgetLgDistributorNo">DO-0000006</td>
-          <td className="widgetLgInvoiceAmount">10000</td>
-          <td className="widgetLgDiscountType">5%</td>
-          <td className="widgetLgDiscountAmount">-500</td>
-          <td className="widgetLgTotal">9500</td>
-          <td className="widgetLgCreateBy">Maria</td>
-        </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgTranc">CO-9237</td>
-          <td className="widgetLgDate">5/07/2021</td>
-          <td className="widgetLgDate">5/07/2021</td>
-          <td className="widgetLgInvoiceNo">INV-000100</td>
-          <td className="widgetLgDistributorNo">DO-0000006</td>
-          <td className="widgetLgInvoiceAmount">10000</td>
-          <td className="widgetLgDiscountType">5%</td>
-          <td className="widgetLgDiscountAmount">-500</td>
-          <td className="widgetLgTotal">9500</td>
-          <td className="widgetLgCreateBy">Maria</td>
-        </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgTranc">CO-9237</td>
-          <td className="widgetLgDate">5/07/2021</td>
-          <td className="widgetLgDate">5/07/2021</td>
-          <td className="widgetLgInvoiceNo">INV-000100</td>
-          <td className="widgetLgDistributorNo">DO-0000006</td>
-          <td className="widgetLgInvoiceAmount">10000</td>
-          <td className="widgetLgDiscountType">5%</td>
-          <td className="widgetLgDiscountAmount">-500</td>
-          <td className="widgetLgTotal">9500</td>
-          <td className="widgetLgCreateBy">Maria</td>
-        </tr>
+       
       </table>
     </div>
   )
