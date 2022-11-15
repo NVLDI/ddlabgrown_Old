@@ -11,7 +11,7 @@ export default function Topbar() {
         <div className="topRight">
             <div className="topbarIconsContainer">
                 <NotificationsNone/>
-                <span className="topIconBag">2</span>
+                
             </div>
             <div className="topbarIconsContainer">
                 <Language/>
