@@ -26,16 +26,22 @@ export default function AdminLogin() {
         alert("Incorrect Admin and Password")
         
       }
-      };
-      const navigateClose = () => {
+};
+const handleSubmit = event => {
+  // 👇️ prevent page refresh
+  event.preventDefault();
+
+  console.log('form submitted ✅');
+};
+    const navigateClose = () => {
           navigate('/');
-        };
+  };
   
   return (
     <div className="AdminLogin">
       <h2 className="LoginAdminClient">Admin Login</h2>
         <div className="AdminLoginWidgetClient">
-            <form className="newAdminForm">
+            <form className="newAdminForm" onSubmit={handleSubmit}>
                 <div className="newAdminItem">
                     <label>Admin</label>
                     <input type="text" placeholder="Admin" id="admin_txt" onChange={handleAdmin}/>
@@ -45,7 +51,7 @@ export default function AdminLogin() {
                     <input type="password" placeholder="Password" id="password_txt" onChange={handlePassword}/>
                 </div>
 
-        <button className="button" onClick={navigateDistributor}>Submit</button>
+        <button type="submit" className="button" onClick={navigateDistributor}>Submit</button>
         <button className="button" onClick={navigateClose}>Cancel</button>
             </form>
         </div>
