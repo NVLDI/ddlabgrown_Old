@@ -35,13 +35,16 @@ import Service from "./Pages/Webpage/Service/Service"
 import Display from './Pages/Webpage/Display/Display';
 import DistributorAmend from './Pages/AdminDashboard/Submenus/Distributor/DistributorAmend';
 import DistributorHomepage from './Pages/DistributorDashboard/Home/Home'
+import AdminProfile from './Pages/AdminDashboard/AdminDetails/AdminProfile'
+import DistributerProfile from './Pages/DistributorDashboard/DistributorProfile/DistributorProfile';
 function App() {
   return (
     <Router>
      
-     
-      
       <Routes>
+      <Route exact path="/adminprofile" element={<AdminProfile/>}/>
+      <Route exact path="/distributorprofile" element={<DistributerProfile/>}/>
+
       <Route exact path="/" element={<Display/>}/>
 
       <Route exact path = "/adminlogin" element={<AdminLogin/>}/>
@@ -78,6 +81,7 @@ function App() {
       <Route exact path="/invoiceAmend/:invoiceAmendid" element={<InvoiceAmend/>}/>
       <Route exact path="/purchaseOrderAmend/:purchaseOrderAmendid" element={<PurchaseOrderAmend/>}/>
       <Route exact path="/distributorAmend/:distributorAmendid" element={<DistributorAmend/>}/>
+      
       </Routes>
     </Router>
   );
