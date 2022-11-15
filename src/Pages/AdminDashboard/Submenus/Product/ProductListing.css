@@ -10,5 +10,14 @@
     margin: 0px;
 }
 .edit{
-    margin: 20px;
+    margin: 0px;
+    width: 60px;
+}
+.icon
+{
+    margin: 10px;
+}
+.deleteicon
+{
+    margin: 8px;
 }

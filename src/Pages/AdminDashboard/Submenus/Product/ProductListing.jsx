@@ -6,6 +6,7 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import {Link} from "react-router-dom"
 import Sidebar from "../../../../Components/Sidebar/Sidebar";
 import Topbar from "../../../../Components/Topbar/Topbar";
+
 const columns = [
   {
     field: 'action',
@@ -15,11 +16,11 @@ const columns = [
     renderCell:(params)=>{
         return(
             <>
-            <VisibilityIcon/>
+            <VisibilityIcon className='icon'/>
             <Link to={"/productamend/"+params.row.id}>
             <button className="edit">Edit</button>
             </Link>
-            <DeleteOutlineIcon/>
+            <DeleteOutlineIcon className='deleteicon'/>
             </>
         )
     }
@@ -75,7 +76,7 @@ export default function ProductListing(){
         <Sidebar/>
     <div className="ProductListing">
          <h3 className="ProductListingWidgetClient">Product Listing</h3>
-        <div style={{ height: 630, width: '100%' }}>
+        <div style={{ height: 630, width: '100%',textAlign:'justify' }}>
             <DataGrid
             rows={rows}
             columns={columns}
