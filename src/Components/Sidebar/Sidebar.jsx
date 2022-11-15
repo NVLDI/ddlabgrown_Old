@@ -39,13 +39,13 @@ export default function Sidebar() {
             <Link to="/adddistributor" className='link'>
                 <li className="sidebarListItem">
                 <PersonOutline className='sidebarIcon'/>
-                 Distributor
+                 Registration
                 </li>
                 </Link>
                 <Link to="/distributorlisting" className='link'>
                 <li className="sidebarListItem">
                 <Assessment className='sidebarIcon'/>
-                D.Listing
+                Registration Listing
                 </li>
                 </Link>
             </ul>
