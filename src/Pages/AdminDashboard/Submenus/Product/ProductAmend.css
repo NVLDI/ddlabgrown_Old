@@ -9,3 +9,8 @@
     display: flex;
     margin: 0px;
   }
+  .ProductAmendClient{
+    display: flex;
+    margin: 20px 40px;
+    color:rgb(125, 125, 125);
+}
