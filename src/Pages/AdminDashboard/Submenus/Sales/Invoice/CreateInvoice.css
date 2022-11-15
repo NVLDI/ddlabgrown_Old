@@ -1,0 +1,11 @@
+.createInvoice{
+    flex: 4;
+}
+.createInvoiceWidgetClient{
+    display: flex;
+    margin: 20px;
+}
+.container{
+    display: flex;
+    margin: 0px;
+  }

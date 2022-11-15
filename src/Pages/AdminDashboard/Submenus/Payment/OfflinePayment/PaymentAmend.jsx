@@ -1,6 +1,6 @@
 import "./PaymentAmend.css"
-import Sidebar from "../../../../Components/Sidebar/Sidebar";
-import Topbar from "../../../../Components/Topbar/Topbar";
+import Sidebar from "../../../../../Components/Sidebar/Sidebar";
+import Topbar from "../../../../../Components/Topbar/Topbar";
 
 export default function PaymentAmend() {
   return (
@@ -9,7 +9,7 @@ export default function PaymentAmend() {
     <div className="container">
     <Sidebar/>
     <div className="PaymentAmend">
-        <h3 className="PaymentAmendWidgetClient">PaymentAmend</h3>
+        <h3 className="PaymentAmendWidgetClient">Offline Payment Amend</h3>
     </div>
     </div>
     </div>

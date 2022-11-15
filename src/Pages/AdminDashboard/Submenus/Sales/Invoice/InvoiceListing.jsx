@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { DataGrid } from '@material-ui/data-grid';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
-import "./ProductListing.css"
+import "./InvoiceListing.css"
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import {Link} from "react-router-dom"
-import Sidebar from "../../../../Components/Sidebar/Sidebar";
-import Topbar from "../../../../Components/Topbar/Topbar";
+import { Link } from 'react-router-dom';
+import Sidebar from "../../../../../Components/Sidebar/Sidebar";
+import Topbar from "../../../../../Components/Topbar/Topbar";
 const columns = [
   {
     field: 'action',
@@ -16,7 +16,7 @@ const columns = [
         return(
             <>
             <VisibilityIcon/>
-            <Link to={"/productamend/"+params.row.id}>
+            <Link to={"/invoiceAmend/"+params.row.id}>
             <button>Edit</button>
             </Link>
             <DeleteOutlineIcon/>
@@ -24,7 +24,7 @@ const columns = [
         )
     }
   },
-  { field: 'id', headerName: 'id', width: 90 },
+  { field: 'id', headerName: 'ID', width: 100 },
   {
     field: 'Date',
     headerName: 'Date',
@@ -32,49 +32,43 @@ const columns = [
     editable: false,
   },
   {
+    field: 'InvoiceNo',
+    headerName: 'Invoice No',
+    width: 150,
+    editable: false,
+  },
+  {
+    field: 'PurchaseOrderNo',
+    headerName: 'PO.No',
+    width: 150,
+    editable: false,
+  },
+  {
     field: 'ProductCode',
     headerName: 'Product Code',
-    width: 150,
     editable: false,
+    width: 180,
   },
   {
-    field: 'ProductName',
-    headerName: 'Product Name',
-    width: 150,
+    field: 'ProductDes',
+    headerName: 'Product Description',
     editable: false,
-  },
-  {
-    field: 'Shape',
-    headerName: 'Shape',
-    editable: false,
-    width: 130,
-  },
-  {
-    field: 'Cutting',
-    headerName: 'Cutting',
-    editable: false,
-    width: 140,
-  },
-  {
-    field: 'Color',
-    headerName: 'Color',
-    editable: false,
-    width: 130,
+    width: 210,
   },
 ];
 
 const rows = [
-  { id: '',Date: '',ProductCode:'', ProductName: '', Shape: '', Cutting: '' ,Color: ''},
+  { id: '',Date: '',InvoiceNo:'', PurchaseOrderNo: '', ProductCode: '', ProductDes: '' ,Createby: ''},
 ];
 
-export default function ProductListing(){
+export default function InvoiceListing(){
     return(
       <div>
         <Topbar/>
         <div className="container">
         <Sidebar/>
-    <div className="ProductListing">
-         <h3 className="ProductListingWidgetClient">Product Listing</h3>
+    <div className="InvoiceListing">
+         <h3 className="InvoiceListingWidgetClient">Invoice Listing</h3>
         <div style={{ height: 630, width: '100%' }}>
             <DataGrid
             rows={rows}
@@ -85,8 +79,7 @@ export default function ProductListing(){
         />
     </div>
     </div>
-    </div>
-    </div>
-           
+          </div>
+          </div> 
     )
 }

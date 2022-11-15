@@ -8,47 +8,10 @@ import Sidebar from "../../../../Components/Sidebar/Sidebar";
 import Topbar from "../../../../Components/Topbar/Topbar";
 
 const columns = [
-  { field: 'id', headerName: 'id', width: 90 },
-  {
-    field: 'Code',
-    headerName: 'Code',
-    width: 130,
-    editable: true,
-  },
-  {
-    field: 'DateCreate',
-    headerName: 'Date Create',
-    width: 140,
-    editable: true,
-  },
-  {
-    field: 'INVNo',
-    headerName: 'Invoice No',
-    width: 140,
-    editable: true,
-  },
-  {
-    field: 'DNo',
-    headerName: 'D.No',
-    editable: true,
-    width: 150,
-  },
-  {
-    field: 'DiscountType',
-    headerName: 'Discount Type',
-    editable: true,
-    width: 160,
-  },
-  {
-    field: 'CreateBy',
-    headerName: 'Create By',
-    editable: true,
-    width: 140,
-  },
   {
     field: 'action',
     headerName: 'Action',
-    editable: true,
+    editable: false,
     width: 120,
     renderCell:(params)=>{
         return(
@@ -62,29 +25,49 @@ const columns = [
         )
     }
   },
+  { field: 'id', headerName: 'id', width: 90 },
+  {
+    field: 'Code',
+    headerName: 'Code',
+    width: 130,
+    editable: false,
+  },
+  {
+    field: 'DateCreate',
+    headerName: 'Date Create',
+    width: 140,
+    editable: false,
+  },
+  {
+    field: 'INVNo',
+    headerName: 'Invoice No',
+    width: 140,
+    editable: false,
+  },
+  {
+    field: 'DNo',
+    headerName: 'D.No',
+    editable: false,
+    width: 150,
+  },
+  {
+    field: 'DiscountType',
+    headerName: 'Discount Type',
+    editable: false,
+    width: 160,
+  },
+  {
+    field: 'CreateBy',
+    headerName: 'Create By',
+    editable: false,
+    width: 140,
+  },
+
 ];
 
 const rows = [
-  { id: 1,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 2,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 3,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 4,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 5,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 6,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 7,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 8,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 9,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 10,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 11,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 12,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 13,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 14,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 15,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 16,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 17,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 18,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 19,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
-  { id: 20,DateCreate: '23rd sep 2022', Code: 'DO-194345', INVNo: 'Venkatesan', DNo: 'L4319135' ,DiscountType: 7010674161, CreateBy: 'No 5/29 new street Thathankuppam'},
+  { id: '',DateCreate: '', Code: '', INVNo: '', DNo: '' ,DiscountType: '', CreateBy: ''},
+  
 ];
 
 export default function CouponListing(){

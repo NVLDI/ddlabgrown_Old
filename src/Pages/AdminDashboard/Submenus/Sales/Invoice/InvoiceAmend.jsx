@@ -1,6 +1,6 @@
 import "./InvoiceAmend.css"
-import Sidebar from "../../../../Components/Sidebar/Sidebar";
-import Topbar from "../../../../Components/Topbar/Topbar";
+import Sidebar from "../../../../../Components/Sidebar/Sidebar";
+import Topbar from "../../../../../Components/Topbar/Topbar";
 export default function InvoiceAmend() {
   return (
     <div>

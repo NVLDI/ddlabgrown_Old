@@ -1,9 +1,15 @@
 import "./Delivery.css"
+import Sidebar from "../../../../Components/Sidebar/Sidebar";
+import Topbar from "../../../../Components/Topbar/Topbar";
 
 export default function Delivery(){
     return(
+        <div>
+        <Topbar/>
+        <div className="container">
+        <Sidebar/>
             <div className="Delivery">
-                    <h2 className="DeliveryWidgetClient">Delivery Form</h2>
+                    <h2 className="DeliveryWidgetClient">Delivery Order</h2>
                     <div className="DeliveryWidgetClient">
                     <form className="newDeliveryForm">
                         <div className="newDeliveryItem">
@@ -124,5 +130,7 @@ export default function Delivery(){
                         </form>
                         </div>
             </div>
+            </div>
+           </div> 
     )
 }

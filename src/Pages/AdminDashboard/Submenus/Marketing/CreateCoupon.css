@@ -1,7 +1,7 @@
-.Marketing{
+.CreateCoupon{
     flex: 4;
 }
-.MarketingWidgetClient{
+.CreateCouponWidgetClient{
     display: flex;
     margin: 20px;
 }

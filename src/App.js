@@ -1,18 +1,19 @@
 import './App.css';
 import Home from "./Pages/AdminDashboard/Home/Home"
 import Distributor from "./Pages/AdminDashboard/Submenus/Distributor/AddDistributor"
-import Sales from "./Pages/AdminDashboard/Submenus/Sales/SalesModule"
-import Marketing from "./Pages/AdminDashboard/Submenus/Marketing/Marketing"
+import Sales from "./Pages/AdminDashboard/Submenus/Sales/OrderCart/SalesModule"
+import CreateCoupon from "./Pages/AdminDashboard/Submenus/Marketing/CreateCoupon"
 import Payment from "./Pages/AdminDashboard/Submenus/Payment/Payment"
 import Delivery from "./Pages/AdminDashboard/Submenus/Delivery/Delivery"
 import AfterSalesService from "./Pages/AdminDashboard/Submenus/AfterSalesService/AfterSalesService"
 import DistributorListing from "./Pages/AdminDashboard/Submenus/Distributor/DistributorListing"
-import PurchaseOrderListing from "./Pages/AdminDashboard/Submenus/Sales/PurchaseOrderListing"
+import PurchaseOrderListing from "./Pages/AdminDashboard/Submenus/Sales/PurchaseOrder/PurchaseOrderListing"
 import AfterSalesServiceListing from "./Pages/AdminDashboard/Submenus/AfterSalesService/AfterSalesServiceListing"
 import DeliveryListing from "./Pages/AdminDashboard/Submenus/Delivery/DeliveryListing"
-import PaymentListing from "./Pages/AdminDashboard/Submenus/Payment/PaymentListing"
+import OnlinePaymentListing from "./Pages/AdminDashboard/Submenus/Payment/OnlinePayment/PaymentListing"
+import OfflinePaymentListing from "./Pages/AdminDashboard/Submenus/Payment/OfflinePayment/PaymentListing"
 import CouponListing from "./Pages/AdminDashboard/Submenus/Marketing/CouponListing"
-import InvoiceListing from "./Pages/AdminDashboard/Submenus/Sales/InvoiceListing"
+import InvoiceListing from "./Pages/AdminDashboard/Submenus/Sales/Invoice/InvoiceListing"
 import ProductListing from "./Pages/AdminDashboard/Submenus/Product/ProductListing"
 import ProductAmend from "./Pages/AdminDashboard/Submenus/Product/ProductAmend"
 import AfterSalesServiceAmend from "./Pages/AdminDashboard/Submenus/AfterSalesService/AfterSalesServiceAmend"
@@ -23,9 +24,10 @@ import {
   Routes
 } from "react-router-dom";
 import CouponAmend from './Pages/AdminDashboard/Submenus/Marketing/CouponAmend';
-import PaymentAmend from './Pages/AdminDashboard/Submenus/Payment/PaymentAmend';
-import InvoiceAmend from './Pages/AdminDashboard/Submenus/Sales/InvoiceAmend';
-import PurchaseOrderAmend from './Pages/AdminDashboard/Submenus/Sales/PurchaseOrderAmend';
+import OnlinePaymentAmend from './Pages/AdminDashboard/Submenus/Payment/OnlinePayment/PaymentAmend';
+import OfflinePaymentAmend from './Pages/AdminDashboard/Submenus/Payment/OfflinePayment/PaymentAmend';
+import InvoiceAmend from './Pages/AdminDashboard/Submenus/Sales/Invoice/InvoiceAmend';
+import PurchaseOrderAmend from './Pages/AdminDashboard/Submenus/Sales/PurchaseOrder/PurchaseOrderAmend';
 import AdminLogin from './Pages/AdminLogin/AdminLogin';
 import DistributorLogin from './Pages/DistributorLogin/DistributorLogin';
 import AddProduct from "./Pages/AdminDashboard/Submenus/Product/Product";
@@ -37,6 +39,8 @@ import DistributorAmend from './Pages/AdminDashboard/Submenus/Distributor/Distri
 import DistributorHomepage from './Pages/DistributorDashboard/Home/Home'
 import AdminProfile from './Pages/AdminDashboard/AdminDetails/AdminProfile'
 import DistributerProfile from './Pages/DistributorDashboard/DistributorProfile/DistributorProfile';
+import PurchaseOrder from './Pages/AdminDashboard/Submenus/Sales/PurchaseOrder/PurchaseOrder';
+import CreateInvoice from './Pages/AdminDashboard/Submenus/Sales/Invoice/CreateInvoice';
 function App() {
   return (
     <Router>
@@ -56,7 +60,9 @@ function App() {
       <Route exact path="/home" element={<Home/>}/>
       <Route exact path="/distributorHomepage" element={<DistributorHomepage/>}/>
       <Route exact path="/sales" element={<Sales/>}/>
-      <Route exact path="/marketing" element={<Marketing/>}/>
+      <Route exact path="/createCoupon" element={<CreateCoupon/>}/>
+      <Route exact path="/purchaseOrder" element={<PurchaseOrder/>}/>
+      <Route exact path="/createInvoice" element={<CreateInvoice/>}/>
       <Route exact path="/payment" element={<Payment/>}/>
       <Route exact path="/delivery" element={<Delivery/>}/>
       <Route exact path="/aftersalesservice" element={<AfterSalesService/>}/>
@@ -68,16 +74,19 @@ function App() {
       <Route exact path="/purchaseorderlisting" element={<PurchaseOrderListing/>}/>
       <Route exact path="/afterSalesServicelisting" element={<AfterSalesServiceListing/>}/>
       <Route exact path="/deliveryListing" element={<DeliveryListing/>}/>
-      <Route exact path="/paymentListing" element={<PaymentListing/>}/>
+      <Route exact path="/onlinepaymentListing" element={<OnlinePaymentListing/>}/>
+      <Route exact path="/offlinepaymentListing" element={<OfflinePaymentListing/>}/>
       <Route exact path="/couponListing" element={<CouponListing/>}/>
       <Route exact path="/InvoiceListing" element={<InvoiceListing/>}/>
       <Route exact path="/productListing" element={<ProductListing/>}/>
+
 
       <Route exact path="/productAmend/:productid" element={<ProductAmend/>}/>
       <Route exact path="/AfterSalesServiceAmend/:AfterSalesServiceid" element={<AfterSalesServiceAmend/>}/>
       <Route exact path="/deliveryAmend/:deliveryAmendid" element={<DeliveryAmend/>}/>
       <Route exact path="/couponAmend/:couponAmendid" element={<CouponAmend/>}/>
-      <Route exact path="/paymentAmend/:paymentAmendid" element={<PaymentAmend/>}/>
+      <Route exact path="/onlinepaymentAmend/:paymentAmendid" element={<OnlinePaymentAmend/>}/>
+      <Route exact path="/offlinepaymentAmend/:paymentAmendid" element={<OfflinePaymentAmend/>}/>
       <Route exact path="/invoiceAmend/:invoiceAmendid" element={<InvoiceAmend/>}/>
       <Route exact path="/purchaseOrderAmend/:purchaseOrderAmendid" element={<PurchaseOrderAmend/>}/>
       <Route exact path="/distributorAmend/:distributorAmendid" element={<DistributorAmend/>}/>

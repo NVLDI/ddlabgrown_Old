@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { DataGrid } from '@material-ui/data-grid';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
-import "./ProductListing.css"
+import "./PurchaseOrderListing.css"
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import {Link} from "react-router-dom"
-import Sidebar from "../../../../Components/Sidebar/Sidebar";
-import Topbar from "../../../../Components/Topbar/Topbar";
+import { Link } from 'react-router-dom';
+import Sidebar from "../../../../../Components/Sidebar/Sidebar";
+import Topbar from "../../../../../Components/Topbar/Topbar";
+
 const columns = [
   {
     field: 'action',
@@ -16,7 +17,7 @@ const columns = [
         return(
             <>
             <VisibilityIcon/>
-            <Link to={"/productamend/"+params.row.id}>
+            <Link to={"/PurchaseOrderamend/"+params.row.id}>
             <button>Edit</button>
             </Link>
             <DeleteOutlineIcon/>
@@ -24,11 +25,17 @@ const columns = [
         )
     }
   },
-  { field: 'id', headerName: 'id', width: 90 },
+  { field: 'id', headerName: 'ID', width: 100 },
   {
     field: 'Date',
     headerName: 'Date',
     width: 140,
+    editable: false,
+  },
+  {
+    field: 'PurchaseOrderNo',
+    headerName: 'PO.No',
+    width: 150,
     editable: false,
   },
   {
@@ -38,43 +45,44 @@ const columns = [
     editable: false,
   },
   {
-    field: 'ProductName',
-    headerName: 'Product Name',
-    width: 150,
+    field: 'ProductDes',
+    headerName: 'Product Description',
     editable: false,
+    width: 160,
   },
   {
-    field: 'Shape',
-    headerName: 'Shape',
+    field: 'Createby',
+    headerName: 'Created By',
     editable: false,
-    width: 130,
+    width: 160,
   },
   {
-    field: 'Cutting',
-    headerName: 'Cutting',
+    field: 'AmendBy',
+    headerName: 'Amend By',
     editable: false,
-    width: 140,
+    width: 160,
   },
   {
-    field: 'Color',
-    headerName: 'Color',
+    field: 'AmendDate',
+    headerName: 'Amend Date',
     editable: false,
-    width: 130,
-  },
+    width: 160,
+  }, 
 ];
 
 const rows = [
-  { id: '',Date: '',ProductCode:'', ProductName: '', Shape: '', Cutting: '' ,Color: ''},
+  { id: '',Date: '', PurchaseOrderNo: '', ProductCode: '', ProductDes: '' ,Createby: '', AmendBy: '', AmendDate: ''},
+  
 ];
 
-export default function ProductListing(){
+export default function PurchaseOrderListing(){
     return(
       <div>
         <Topbar/>
         <div className="container">
         <Sidebar/>
-    <div className="ProductListing">
-         <h3 className="ProductListingWidgetClient">Product Listing</h3>
+    <div className="PurchaseOrderListing">
+         <h3 className="PurchaseOrderListingWidgetClient">Purchase Order Listing</h3>
         <div style={{ height: 630, width: '100%' }}>
             <DataGrid
             rows={rows}
@@ -86,7 +94,6 @@ export default function ProductListing(){
     </div>
     </div>
     </div>
-    </div>
-           
+          </div> 
     )
 }

@@ -1,6 +1,6 @@
 import "./SalesModule.css"
-import Sidebar from "../../../../Components/Sidebar/Sidebar";
-import Topbar from "../../../../Components/Topbar/Topbar";
+import Sidebar from "../../../../../Components/Sidebar/Sidebar";
+import Topbar from "../../../../../Components/Topbar/Topbar";
 
 export default function SalesModule(){
     return(
@@ -9,7 +9,7 @@ export default function SalesModule(){
         <div className="container">
         <Sidebar/>
             <div className="Sales">
-            <h3 className="SalesWidgetClient">Hello welcome to Sales page</h3>
+            <h3 className="SalesWidgetClient">Hello welcome to Order Cart</h3>
             </div>
         </div>
         </div>

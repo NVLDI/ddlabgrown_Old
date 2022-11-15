@@ -1,22 +1,23 @@
 import * as React from 'react';
 import { DataGrid } from '@material-ui/data-grid';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
-import "./ProductListing.css"
+import "./PaymentListing.css"
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import {Link} from "react-router-dom"
-import Sidebar from "../../../../Components/Sidebar/Sidebar";
-import Topbar from "../../../../Components/Topbar/Topbar";
+import { Link } from 'react-router-dom';
+import Sidebar from "../../../../../Components/Sidebar/Sidebar";
+import Topbar from "../../../../../Components/Topbar/Topbar";
+
 const columns = [
   {
     field: 'action',
     headerName: 'Action',
     editable: false,
-    width: 160,
+    width: 120,
     renderCell:(params)=>{
         return(
             <>
             <VisibilityIcon/>
-            <Link to={"/productamend/"+params.row.id}>
+            <Link to={"/offlinepaymentAmend/"+params.row.id}>
             <button>Edit</button>
             </Link>
             <DeleteOutlineIcon/>
@@ -32,49 +33,56 @@ const columns = [
     editable: false,
   },
   {
-    field: 'ProductCode',
-    headerName: 'Product Code',
-    width: 150,
-    editable: false,
-  },
-  {
-    field: 'ProductName',
-    headerName: 'Product Name',
-    width: 150,
-    editable: false,
-  },
-  {
-    field: 'Shape',
-    headerName: 'Shape',
-    editable: false,
+    field: 'TranscationNo',
+    headerName: 'Transcation.No',
     width: 130,
+    editable: false,
   },
   {
-    field: 'Cutting',
-    headerName: 'Cutting',
-    editable: false,
+    field: 'INVNo',
+    headerName: 'Invoice No',
     width: 140,
+    editable: false,
   },
   {
-    field: 'Color',
-    headerName: 'Color',
+    field: 'PONo',
+    headerName: 'PO No',
     editable: false,
-    width: 130,
+    width: 160,
   },
+  {
+    field: 'PaymentMethod',
+    headerName: 'Payment Method',
+    editable: false,
+    width: 160,
+  },
+  {
+    field: 'PaymentType',
+    headerName: 'Payment Type',
+    editable: false,
+    width: 160,
+  },
+  {
+    field: 'CrytroCurrency',
+    headerName: 'Crytro Currency',
+    editable: false,
+    width: 160,
+  },
+  
 ];
 
 const rows = [
-  { id: '',Date: '',ProductCode:'', ProductName: '', Shape: '', Cutting: '' ,Color: ''},
+  { id: '',Date: '', TranscationNo: '', INVNo: '', PONo: '' ,PaymentMethod: '', PaymentType: '',CrytroCurrency: ''},
 ];
 
-export default function ProductListing(){
+export default function PaymentListing(){
     return(
       <div>
         <Topbar/>
         <div className="container">
         <Sidebar/>
-    <div className="ProductListing">
-         <h3 className="ProductListingWidgetClient">Product Listing</h3>
+    <div className="PaymentListing">
+         <h3 className="PaymentListingWidgetClient">Offline Payment Listing</h3>
         <div style={{ height: 630, width: '100%' }}>
             <DataGrid
             rows={rows}
@@ -85,8 +93,7 @@ export default function ProductListing(){
         />
     </div>
     </div>
-    </div>
-    </div>
-           
+          </div>
+          </div>
     )
 }

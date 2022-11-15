@@ -7,47 +7,10 @@ import Topbar from "../../../../Components/Topbar/Topbar";
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import {Link} from "react-router-dom"
 const columns = [
-  { field: 'id', headerName: 'ID', width: 100 },
-  {
-    field: 'Date',
-    headerName: 'Date of Registor',
-    width: 180,
-    editable: true,
-  },
-  {
-    field: 'DistributorNo',
-    headerName: 'D.No',
-    width: 150,
-    editable: true,
-  },
-  {
-    field: 'name',
-    headerName: 'Name',
-    width: 150,
-    editable: true,
-  },
-  {
-    field: 'NICNo',
-    headerName: 'NIC No',
-    editable: true,
-    width: 160,
-  },
-  {
-    field: 'phoneNo',
-    headerName: 'Phone No',
-    editable: true,
-    width: 160,
-  },
-  {
-    field: 'address',
-    headerName: 'Address',
-    editable: true,
-    width: 160,
-  },
   {
     field: 'action',
     headerName: 'Action',
-    editable: true,
+    editable: false,
     width: 160,
     renderCell:(params)=>{
         return(
@@ -61,19 +24,49 @@ const columns = [
         )
     }
   },
+  { field: 'id', headerName: 'ID', width: 100 },
+  {
+    field: 'Date',
+    headerName: 'Date of Registor',
+    width: 180,
+    editable: false,
+  },
+  {
+    field: 'DistributorNo',
+    headerName: 'D.No',
+    width: 150,
+    editable: false,
+  },
+  {
+    field: 'name',
+    headerName: 'Name',
+    width: 150,
+    editable: false,
+  },
+  {
+    field: 'NICNo',
+    headerName: 'NIC No',
+    editable: false,
+    width: 160,
+  },
+  {
+    field: 'phoneNo',
+    headerName: 'Phone No',
+    editable: false,
+    width: 160,
+  },
+  {
+    field: 'address',
+    headerName: 'Address',
+    editable: false,
+    width: 160,
+  },
+  
 ];
 
 const rows = [
-  { id: 1,Date: '23rd sep 2022', DistributorNo: 'DO-194345', name: 'Venkatesan', NICNo: 'L4319135' ,phoneNo: 7010674161, address: 'No 5/29 new street Thathankuppam'},
-  { id: 2,Date: '23rd sep 2022', DistributorNo: 'DO-194345', name: 'Venkatesan', NICNo: 'L4319135' ,phoneNo: 7010674161, address: 'No 5/29 new street Thathankuppam'},
-  { id: 3,Date: '23rd sep 2022', DistributorNo: 'DO-194345', name: 'Venkatesan', NICNo: 'L4319135' ,phoneNo: 7010674161, address: 'No 5/29 new street Thathankuppam'},
-  { id: 4,Date: '23rd sep 2022', DistributorNo: 'DO-194345', name: 'Venkatesan', NICNo: 'L4319135' ,phoneNo: 7010674161, address: 'No 5/29 new street Thathankuppam'},
-  { id: 5,Date: '23rd sep 2022', DistributorNo: 'DO-194345', name: 'Venkatesan', NICNo: 'L4319135' ,phoneNo: 7010674161, address: 'No 5/29 new street Thathankuppam'},
-  { id: 6,Date: '23rd sep 2022', DistributorNo: 'DO-194345', name: 'Venkatesan', NICNo: 'L4319135' ,phoneNo: 7010674161, address: 'No 5/29 new street Thathankuppam'},
-  { id: 7,Date: '23rd sep 2022', DistributorNo: 'DO-194345', name: 'Venkatesan', NICNo: 'L4319135' ,phoneNo: 7010674161, address: 'No 5/29 new street Thathankuppam'},
-  { id: 8,Date: '23rd sep 2022', DistributorNo: 'DO-194345', name: 'Venkatesan', NICNo: 'L4319135' ,phoneNo: 7010674161, address: 'No 5/29 new street Thathankuppam'},
-  { id: 9,Date: '23rd sep 2022', DistributorNo: 'DO-194345', name: 'Venkatesan', NICNo: 'L4319135' ,phoneNo: 7010674161, address: 'No 5/29 new street Thathankuppam'},
-  { id: 10,Date: '23rd sep 2022', DistributorNo: 'DO-194345', name: 'Venkatesan', NICNo: 'L4319135' ,phoneNo: 7010674161, address: 'No 5/29 new street Thathankuppam'},
+  { id: '',Date: '', DistributorNo: '', name: '', NICNo: '' ,phoneNo: '', address: ''},
+  
 ];
 
 export default function DistributorListing(){

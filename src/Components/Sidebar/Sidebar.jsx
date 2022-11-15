@@ -23,7 +23,7 @@ export default function Sidebar() {
                 <Link to="/addproduct" className='link'>
                 <li className="sidebarListItem">
                 <ManageAccounts className='sidebarIcon'/>
-                Add Product
+                 Product
                 </li>
                 </Link>
                 <Link to="/productListing" className='link'>
@@ -39,7 +39,7 @@ export default function Sidebar() {
             <Link to="/adddistributor" className='link'>
                 <li className="sidebarListItem">
                 <PersonOutline className='sidebarIcon'/>
-                Distributor Register
+                 Distributor
                 </li>
                 </Link>
                 <Link to="/distributorlisting" className='link'>
@@ -55,7 +55,13 @@ export default function Sidebar() {
             <Link to="/sales" className='link'>
                 <li className="sidebarListItem">
                 <Email className='sidebarIcon'/>
-                Ordering
+                Order Cart
+                </li>
+            </Link>
+            <Link to="/purchaseorder" className='link'>
+                <li className="sidebarListItem">
+                <Feedback className='sidebarIcon'/>
+                 Purchase Order
                 </li>
             </Link>
             <Link to="/purchaseorderlisting" className='link'>
@@ -63,18 +69,24 @@ export default function Sidebar() {
                 <Feedback className='sidebarIcon'/>
                 Purchase Order Listing
                 </li>
-                </Link>
-                <Link to="/invoicelisting" className='link'>
+            </Link>
+            <Link to="/createInvoice" className='link'>
+                <li className="sidebarListItem">
+                <Feedback className='sidebarIcon'/>
+                 Invoice
+                </li>
+            </Link>
+            <Link to="/invoicelisting" className='link'>
                 <li className="sidebarListItem">
                 <Feedback className='sidebarIcon'/>
                 Invoice Listing
                 </li>
-                </Link>
+            </Link>
             </ul>
             <div className="sidebarMenu"></div>
             <h3 className="sidebarTitle">Marketing</h3>
             <ul className="sidebarList">
-            <Link to="/couponlisting" className='link'>
+            <Link to="/createCoupon" className='link'>
                 <li className="sidebarListItem">
                 <ManageAccounts className='sidebarIcon'/>
                 Coupon
@@ -82,30 +94,42 @@ export default function Sidebar() {
             </Link>
             <Link to="/couponlisting" className='link'>
                 <li className="sidebarListItem">
-                <Report className='sidebarIcon'/>
-                Promotion
+                <ManageAccounts className='sidebarIcon'/>
+                Coupon Listing
                 </li>
             </Link>
             </ul>
             <div className="sidebarMenu"></div>
             <h3 className="sidebarTitle">Payment</h3>
             <ul className="sidebarList">
-            <Link to="/PaymentListing" className='link'>
+            <Link to="/payment" className='link'>
                 <li className="sidebarListItem">
                 <ManageAccounts className='sidebarIcon'/>
-                Online
+                Payment
                 </li>
             </Link>
-            <Link to="/PaymentListing" className='link'>
+            <Link to="/onlinepaymentListing" className='link'>
+                <li className="sidebarListItem">
+                <ManageAccounts className='sidebarIcon'/>
+                Online Payment Listing
+                </li>
+            </Link>
+            <Link to="/offlinepaymentListing" className='link'>
                 <li className="sidebarListItem">
                 <Report className='sidebarIcon'/>
-                Offline
+                Offline Payment Listing
                 </li>
             </Link>
             </ul>
             <div className="sidebarMenu"></div>
             <h3 className="sidebarTitle">Delivery</h3>
             <ul className="sidebarList">
+            <Link to="/delivery" className='link'>
+                <li className="sidebarListItem">
+                <ManageAccounts className='sidebarIcon'/>
+                 Delivery Order
+                </li>
+            </Link>
             <Link to="/deliverylisting" className='link'>
                 <li className="sidebarListItem">
                 <ManageAccounts className='sidebarIcon'/>
@@ -119,7 +143,7 @@ export default function Sidebar() {
             <Link to="/AfterSalesService" className='link'>
                 <li className="sidebarListItem">
                 <ManageAccounts className='sidebarIcon'/>
-                Appointment
+                ASM Appointment
                 </li>
             </Link>
             <Link to="/AfterSalesServiceListing" className='link'>
