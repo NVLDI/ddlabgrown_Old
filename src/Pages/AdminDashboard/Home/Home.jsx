@@ -19,10 +19,10 @@ export default function Home() {
           <div className="homeWidgetClient">
           <WidgetClientLg/>
           </div>
-          <Marketing/>
           <Payments/>
           <Delivery/>
           <AfterSalesService/>
+          <Marketing/>
       </div>
       </div>
       </div>

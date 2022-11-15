@@ -10,6 +10,9 @@
 .widgetLgTitle{
     font-size: 22px;
     font-weight: 600;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 2px;
 }
 .widgetLgTable{
     width: 100%;
@@ -17,7 +20,6 @@
 }
 .widgetLgTh{
     text-align: left;
-
 }
 .widgetLgMerchant{
     display: flex;
