@@ -8,4 +8,7 @@
 .container{
     display: flex;
     margin: 0px;
-  }
+}
+.edit{
+    margin: 20px;
+}

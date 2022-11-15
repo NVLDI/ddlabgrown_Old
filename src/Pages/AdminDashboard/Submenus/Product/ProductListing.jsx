@@ -17,7 +17,7 @@ const columns = [
             <>
             <VisibilityIcon/>
             <Link to={"/productamend/"+params.row.id}>
-            <button>Edit</button>
+            <button className="edit">Edit</button>
             </Link>
             <DeleteOutlineIcon/>
             </>
