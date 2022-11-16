@@ -143,7 +143,7 @@ export default function Delivery(){
                     <form className="newDeliveryForm">
                     <div className="newDeliveryItem">
                                 <label>Create By</label>
-                                <input type="text" placeholder="Create By" disabled/>
+                                <input type="text" placeholder="" disabled/>
                     </div>
                     <button className="deliveryCreateButton" >Save</button>
                         <button className="deliveryClearButton">Print</button>
