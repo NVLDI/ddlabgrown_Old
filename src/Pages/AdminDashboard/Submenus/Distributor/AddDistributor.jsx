@@ -53,7 +53,7 @@ export default function Distributor(){
                         <div className="DistributorWidgetClient">
                         <form className="newDeliveryForm-con">
                         <div className="newDistributorItem">
-                                <label className="namedefine">First Name</label>
+                                <label>First Name</label>
                                 <input type="text" placeholder=""/>                                
                         </div>
                         <div className="newDistributorItem">
@@ -196,7 +196,7 @@ export default function Distributor(){
                         <div className="DistributorWidgetClient">
                         <form className="newDeliveryForm-con">
                         <div className="newDistributorItem">
-                                <label className="namedefine">Referral code</label>
+                                <label>Referral code</label>
                                 <input type="text" placeholder=""/>
                         </div>
                         <div className="newDistributorItem">
@@ -206,11 +206,11 @@ export default function Distributor(){
                                 
                         </div>
                         <div className="newDistributorItem">
-                                <label className="namedefine">Sponsor's Name</label>
+                                <label >Sponsor's Name</label>
                                 <input type="text" placeholder="" disabled/>
                         </div>
                         <div className="newDistributorItem">
-                                <label className="namedefine">Contact No</label>
+                                <label>Contact No</label>
                                 <input type="text" placeholder="" disabled/>
                         </div>
                         <div className="newDistributorItem">
