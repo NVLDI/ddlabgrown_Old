@@ -35,7 +35,7 @@ const columns = [
 ];
 
 const rows = [
-  { id: '',ProductCode: '', ProductDes: '', Qty: '', Price: ''},
+  
   
 ];
 export default function PurchaseOrder() {

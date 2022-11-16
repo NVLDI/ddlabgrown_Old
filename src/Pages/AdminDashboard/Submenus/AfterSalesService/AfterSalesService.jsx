@@ -121,8 +121,6 @@ export default function AfterSalesService(){
                                 <label>Create By</label>
                                 <input type="text" placeholder="" disabled/>
                     </div>
-                    <button className="AfterSalesServiceCreateButton" >Save</button>
-                    <button className="AfterSalesServiceClearButton">Print</button>
                         </form>
                         </div>
             </div>

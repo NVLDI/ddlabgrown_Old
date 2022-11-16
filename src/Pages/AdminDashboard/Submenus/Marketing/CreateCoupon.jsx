@@ -68,8 +68,7 @@ export default function CreateCoupon(){
                                 <label>Create By</label>
                                 <input type="text" placeholder="" disabled/>
                     </div>
-                    <button className="CouponCreateButton" >Save</button>
-                        <button className="CouponClearButton">Print</button>
+                   
                         </form>
                         </div>
             </div>

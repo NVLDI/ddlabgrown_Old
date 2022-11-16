@@ -162,8 +162,7 @@ export default function Delivery(){
                                 <label>Create By</label>
                                 <input type="text" placeholder="" disabled/>
                     </div>
-                    <button className="deliveryCreateButton" >Save</button>
-                        <button className="deliveryClearButton">Print</button>
+                    
                         </form>
                         </div>
             </div>

@@ -110,8 +110,6 @@ export default function Product(){
                     <option value="5">RM</option>
                     </select>
                     </div>
-                    <button className="CreateButton" onClick={navigateDistributor}>Save</button>
-                    <button className="ClearButton">Cancel</button>
                     </form>
             </div>
             </div>

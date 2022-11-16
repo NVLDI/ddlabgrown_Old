@@ -86,8 +86,6 @@ export default function Payment(){
                         <label className="namedefine">Shift Code</label>
                         <input type="text" placeholder=""/>
                         </div>
-                        <button className="PaymentCreateButton">Save</button>
-                        <button className="PaymentClearButton">Print</button>
                         </form>
                     </div>
             </div>

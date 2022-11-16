@@ -51,8 +51,6 @@ const columns = [
 ];
 
 const rows = [
-  { id: '',ProductCode: '', ProductDes: '', Qty: '', Price: ''},
-  
 ];
 export default function CreateInvoice() {
   let ts = Date.now();
