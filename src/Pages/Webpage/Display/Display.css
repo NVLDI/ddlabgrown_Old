@@ -5,14 +5,14 @@
 }
 .middle-1{
     position: absolute;
-    top: 60%;
-    left: 70%;
+    top: 50%;
+    left: 50%;
    font-size: 18px;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
   .hcolor-1
   {
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
   }
