@@ -67,20 +67,20 @@ export default function InvoiceAmend() {
         <Sidebar/>
     <div className="InvoiceAmend">
         <h2 className="InvoiceAmendClient">Invoice Amend</h2>
-        <div className='createInvoiceWidgetClient'>
-          <form className="newInvoiceForm">
-                        <div className="newInvoiceItem">
+        <div className='InvoiceAmendWidgetClient'>
+          <form className="newInvoiceAmendForm">
+                        <div className="newInvoiceAmendItem">
                         <label>Invoice No</label>
                         <input type="text" placeholder=""/>
                         </div>
-                        <div className="newInvoiceItem">
+                        <div className="newInvoiceAmendItem">
                 
                         </div>
-                        <div className="newInvoiceItem">
+                        <div className="newInvoiceAmendItem">
                                 <label>Date</label>
                                 <input type="text" placeholder="Date" value={Current}/>
                         </div>
-                        <div className="newInvoiceItem">
+                        <div className="newInvoiceAmendItem">
                                 <label>Purchase Order No</label>
                                 <input type="text" placeholder=""/>
                                 <label className="namedefine">Distributor No</label>
@@ -90,7 +90,7 @@ export default function InvoiceAmend() {
                                 <label className="namedefine">Contact No</label>
                                 <input type="text" placeholder=""/>
                         </div>
-                        <div className="newInvoiceItem">
+                        <div className="newInvoiceAmendItem">
                                 <label>Direct Sponser No</label>
                                 <input type="text" placeholder=""/>
                                 <label className="namedefine">Direct Sponser Name</label>
@@ -100,7 +100,7 @@ export default function InvoiceAmend() {
                                 <label className="namedefine">Sponser Upline Name</label>
                                 <input type="text" placeholder="" disabled/>
                         </div>
-                        <div className="newInvoiceItem">
+                        <div className="newInvoiceAmendItem">
                                 <label>Coupon Code</label>
                                 <input type="text" placeholder=""/>
                                 <label className="namedefine">Discount Type</label>
@@ -117,14 +117,19 @@ export default function InvoiceAmend() {
             disableSelectionOnClick
         />
         </div>
-          <div className="createInvoiceWidgetClient">
-    <form className="newInvoiceForm">
-    <div className="newInvoiceItem">
+          <div className="InvoiceAmendWidgetClient">
+    <form className="newInvoiceAmendForm">
+    <div className="newInvoiceAmendItem">
                                 <label>Create By</label>
                                 <input type="text" placeholder=""/>
                         </div>
-                        <button className="InvoiceCreateButton">Save</button>
-                        <button className="InvoiceClearButton">Cancel</button>
+                        <div className="newInvoiceAmendItem">
+                                <label>Amend By</label>
+                                <input type="text" placeholder=""/>
+                                
+                        </div>
+                        <button className="InvoiceAmendCreateButton">Save</button>
+                        <button className="InvoiceAmendClearButton">Cancel</button>
                         </form>
       </div>
     </div>
