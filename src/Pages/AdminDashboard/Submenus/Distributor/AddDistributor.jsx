@@ -24,8 +24,7 @@ export default function Distributor(){
                     <div className="DistributorWidgetClient">
                     <form className="newDistributorForm">
                         <div className="newDistributorItem">
-                                <label>Distributor No</label>
-                                <input type="text" placeholder=""/>
+                                
                         </div>
                         <div className="newDistributorItem">
                 
@@ -36,40 +35,82 @@ export default function Distributor(){
                         </div>
                         </form>
                         </div>
-                        
+                    <div className="DistributorWidgetClient">
+                    <form className="newDistributorForm">
+                        <div className="newDistributorItem">
+                                <label className="namedefine-up">Distributor No</label>
+                                <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                
+                        </div>
+                        <div className="newDistributorItem">
+                              
+                        </div>
+                        </form>
+                        </div>
                         <h4 className="DeliveryWidgetClient-sub">Personal Details</h4>
                         <div className="DistributorWidgetClient">
                         <form className="newDeliveryForm-con">
                         <div className="newDistributorItem">
                                 <label className="namedefine">First Name</label>
-                                <input type="text" placeholder=""/>
-                                <label className="namedefine">Last Name</label>
-                                <input type="text" placeholder=""/>
-                                <label className="namedefine">Occupation</label>
-                                <select id="example" class="autocomplete">
-                                <option value="1">None</option>
-                                </select>
+                                <input type="text" placeholder=""/>                                
+                        </div>
+                        <div className="newDistributorItem">
+                                
                                 
                                 
                         </div>
                         <div className="newDistributorItem">
-                        <label className="namedefine">NIC No</label>
-                                <input type="text" placeholder=""/>
-                                <label className="namedefine">Address 1</label>
-                                <input type="text" placeholder=" "/>
-                                <label className="namedefine">Address 2</label>
+                                
+                                
+                                
+                        </div>
+                        <div className="newDistributorItem">
+                        <label>Last Name</label>
                                 <input type="text" placeholder=""/>
                                 
                         </div>
-                       
                         <div className="newDistributorItem">
-                        <label className="namedefine">State</label>
+                        <label>NIC No</label>
+                                <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                        
+                        </div>
+                        <div className="newDistributorItem">
+                        <label>Address 1</label>
+                                <input type="text" placeholder=" "/>  
+                        </div>
+                        <div className="newDistributorItem">       
+                        </div>
+                        <div className="newDistributorItem">
+                                </div>
+                                <div className="newDistributorItem">
+                                <label>Address 2</label>
+                                <input type="text" placeholder=""/>
+                                </div>
+                                <div className="newDistributorItem">
+                                <label>State</label>
                                 <select id="example" class="autocomplete">
                                 <option value="1">None</option>
                                 </select>
-                                <label className="namedefine">Zip Code</label>
+                        </div>
+                        <div className="newDistributorItem">
+                        
+                        </div>
+                        <div className="newDistributorItem">
+                        <label>Country</label>
+                                <select id="example" class="autocomplete">
+                                <option value="1">None</option>
+                                </select>
+                        </div>
+                        <div className="newDistributorItem">
+                        <label>Zip Code</label>
                                 <input type="text" placeholder=""/>
-                                <label className="namedefine">Country</label>
+                        </div>
+                        <div className="newDistributorItem">
+                        <label>Occupation</label>
                                 <select id="example" class="autocomplete">
                                 <option value="1">None</option>
                                 </select>
@@ -80,43 +121,73 @@ export default function Distributor(){
                         <div className="DistributorWidgetClient">
                         <form className="newDeliveryForm-con">
                         <div className="newDistributorItem">
-                        <label className="namedefine">Username</label>
+                        <label>Username</label>
                                 <input type="text" placeholder=""/>
                         </div>
                         <div className="newDistributorItem">
-                                <label className="namedefine">Password</label>
+                                
+                        </div>
+                        <div className="newDistributorItem">
+                                
+                        </div>
+                        <div className="newDistributorItem">
+                                <label>Password</label>
                                 <input type="text" placeholder=""/>
                         </div>
                         <div className="newDistributorItem">
-                                <label className="namedefine">Confirm Password</label>
+                                <label>Confirm Password</label>
                                 <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                        
+                                
                         </div>
                         <div className="newDistributorItem">
                         <label>Phone Number</label>
                                 <input type="text" placeholder=""/>
-                                <label className="namedefine">Phone Verification Code</label>
+                        </div>
+                        <div className="newDistributorItem">
+                        <label>Phone Verification Code</label>
                                 <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                        
                                 
                         </div>
                         <div className="newDistributorItem">
-                                <label>E-mail</label>
-                                <input type="text" placeholder=""/>
-                                <label className="namedefine">Email Verification Code</label>
+                        <label>E-mail</label>
                                 <input type="text" placeholder=""/>
                         </div>
                         <div className="newDistributorItem">
-                               
+                        <label >Email Verification Code</label>
+                                <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                                
+                                
+                        </div>
+                        <div className="newDistributorItem">
+                        <label>Bank Name</label>
+                                <input type="text" placeholder=""/>
                         </div>
                         <div className="newDistributorItem">
                                 <label>Account Number</label>
                                 <input type="text" placeholder=""/>
                         </div>
                         <div className="newDistributorItem">
-                                <label>Confirm Account Number</label>
+                                <label>Shift Code</label>
                                 <input type="text" placeholder=""/>
                         </div>
                         <div className="newDistributorItem">
-                                <label>Shift Code</label>
+                        <label>Bank Address 1</label>
+                                <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                        <label>Bank Address 2</label>
+                                <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                        <label>Country</label>
                                 <input type="text" placeholder=""/>
                         </div>
                         </form>
@@ -129,12 +200,21 @@ export default function Distributor(){
                                 <input type="text" placeholder=""/>
                         </div>
                         <div className="newDistributorItem">
-                                <label className="namedefine">Sponsor's Firstname</label>
+                                
+                        </div>
+                        <div className="newDistributorItem">
+                                
+                        </div>
+                        <div className="newDistributorItem">
+                                <label className="namedefine">Sponsor's Name</label>
                                 <input type="text" placeholder="" disabled/>
                         </div>
                         <div className="newDistributorItem">
                                 <label className="namedefine">Contact No</label>
                                 <input type="text" placeholder="" disabled/>
+                        </div>
+                        <div className="newDistributorItem">
+                              
                         </div>
                         <div className="newDistributorItem">
                               

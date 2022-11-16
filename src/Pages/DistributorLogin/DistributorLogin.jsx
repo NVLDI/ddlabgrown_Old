@@ -50,7 +50,7 @@ export default function DistributorLogin() {
                 <input type="password" placeholder="Password" id="password_txt" onChange={handlePassword}/>
         </div>
         
-        <button type="submit" className="button" onClick={navigateDistributor}>Submit</button>
+        <button type="submit" className="button" onClick={navigateDistributor}>Login</button>
         <button className="button" onClick={navigateClose}>Cancel</button>
     </form>
 </div>

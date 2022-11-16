@@ -24,42 +24,59 @@ export default function Delivery(){
                     <div className="DeliveryWidgetClient">
                     <form className="newDeliveryForm">
                         <div className="newDeliveryItem">
+                        
+                        </div>
+                        <div className="newDeliveryItem">
+                               
+                        </div>
+                        <div className="newDeliveryItem">
+                                <label>Date</label>
+                                <input type="text" placeholder="Date" value={Current}/>
+                        </div>
+                    </form>
+                    </div>
+                    <div className="DeliveryWidgetClient">
+                    <form className="newDeliveryForm">
+                        <div className="newDeliveryItem">
                                 <label>Delivery No</label>
                                 <input type="text" placeholder=""/>
                         </div>
                         <div className="newDeliveryItem">
-                                <label>Delivery Method</label>
+                        <label>Invoice No</label>
+                                <select id="example" class="autocomplete">
+                                <option value="1">None</option>
+                                </select>
+                        </div>
+                        <div className="newDeliveryItem">
+                        <label>ASM No</label>
+                                <select id="example" class="autocomplete">
+                                <option value="1">None</option>
+                                </select>
+                        </div>
+                        <div className="newDeliveryItem">
+                        <label>Delivery Method</label>
                                 <select id="example" class="autocomplete">
                                 <option value="1">None</option>
                                 <option value="2">Self Pick-up</option>
                                 <option value="3">Courier Service</option>
                                 <option value="4">Security company</option>
                                 </select>
-                        </div>
-                        <div className="newDeliveryItem">
-                                <label>Date</label>
-                                <input type="text" placeholder="Date" value={Current}/>
-                        </div>
-                        <div className="newDeliveryItem">
-                                <label>Invoice No</label>
-                                <select id="example" class="autocomplete">
-                                <option value="1">None</option>
-                                </select>
+                                
                         </div>
                         
                         <div className="newDeliveryItem">
-                                <label>Self Pick-Up Date/Time</label>
-                                <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} showTimeSelect dateFormat="Pp" className="datepicker"/>
-                        </div>
-                        <div className="newDeliveryItem">
-                                <label>PO No</label>
+                        <label>PO No</label>
                                 <input type="text" disabled/>
+                                
                         </div>
                         <div className="newDeliveryItem">
-                                <label>ASM No</label>
-                                <select id="example" class="autocomplete">
-                                <option value="1">None</option>
-                                </select>
+                                
+                        </div>
+                        <div className="newDeliveryItem">
+                        <div className="newDeliveryItem">
+                        <label>Self Pick-Up Date/Time</label>
+                                <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} showTimeSelect dateFormat="Pp" className="datepicker"/>
+                        </div> 
                         </div>
                     </form>
                     </div>
@@ -126,7 +143,7 @@ export default function Delivery(){
                                 </select>
                         </div>
                         <div className="newDeliveryItem">
-                                <label>Delivery Bill No</label>
+                                <label>Delivery Bill No(Airway Bill no)</label>
                                 <input type="text" placeholder=""/>
                         </div>
                         <div className="newDeliveryItem">
