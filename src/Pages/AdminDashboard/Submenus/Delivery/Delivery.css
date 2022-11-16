@@ -16,7 +16,7 @@
     margin: 20px 90px;
 }
 .newDeliveryForm{
-    display:flexbox;
+    display:flex;
     flex-wrap: wrap;
 }
 .newDeliveryForm-con{

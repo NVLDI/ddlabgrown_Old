@@ -3,9 +3,96 @@
 }
 .AfterSalesServiceWidgetClient{
     display: flex;
-    margin: 20px;
+    margin: 20px 40px;
+    color:rgb(125, 125, 125);
 }
 .container{
     display: flex;
     margin: 0px;
   }
+  .AfterSalesServiceClient{
+    display: flex;
+    margin: 20px 90px;
+}
+.newAfterSalesServiceForm{
+    display:flex;
+    flex-wrap: wrap;
+}
+.newAfterSalesServiceItem
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.newAfterSalesServiceItem>label{
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color:rgb(125, 125, 125);
+}
+.newAfterSalesServiceItem>input{
+    height: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.AfterSalesServiceClient-sub{
+    display: flex;
+    margin: 20px 90px;
+    color:rgb(32, 84, 255);
+}
+.newAfterSalesServiceForm-con{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+}
+.namedefine
+{
+    margin-top: 10px;
+}
+.namedefine1
+{
+    margin-top: 70px;
+}
+.multiline-text
+{
+    height: 133px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.autocomplete
+{
+    height: 32px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.AfterSalesServiceCreateButton
+{
+    width: 100px;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-left: 400px;
+    cursor: pointer;
+}
+.AfterSalesServiceClearButton
+{
+    width: 100px;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 35px;
+    margin-left: 10px;
+}
