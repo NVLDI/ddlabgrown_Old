@@ -19,7 +19,7 @@ export default function SalesModule(){
             <div className="SalesWidgetClient">
             <form className="newSalesForm">
                         <div className="newSalesItem">
-                                <label className="namedefine">Distributor No</label>
+                                <label>Distributor No</label>
                                 <input type="text" placeholder=""/>
                                 <label className="namedefine">Distributor Name</label>
                                 <input type="text" placeholder="" disabled/>

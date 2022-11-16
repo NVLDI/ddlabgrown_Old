@@ -3,5 +3,10 @@
 }
 .InvoiceAmendWidgetClient{
     display: flex;
-    margin: 20px;
+    margin: 20px 90px;
+}
+.InvoiceAmendClient{
+    display: flex;
+    margin: 20px 40px;
+    color:rgb(125, 125, 125);
 }

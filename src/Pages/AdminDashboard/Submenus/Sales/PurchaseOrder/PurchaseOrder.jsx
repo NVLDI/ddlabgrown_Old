@@ -63,6 +63,7 @@ export default function PurchaseOrder() {
                                 <input type="text" placeholder="" disabled/>
                                 <label className="namedefine">Contact No</label>
                                 <input type="text" placeholder="" disabled/>
+                                
                         </div>
                         <div className="newPurchaseItem">
 
@@ -89,7 +90,7 @@ export default function PurchaseOrder() {
                                 <label className="namedefine">Create By</label>
                                 <input type="text" placeholder=""/>
                         </div>
-                        <button className="PurchaseCreateButton">Procced</button>
+                        <button className="PurchaseCreateButton">Save</button>
                                 <button className="PurchaseClearButton">Cancel</button>
                         </form>
       </div>
