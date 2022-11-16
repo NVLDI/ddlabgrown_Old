@@ -72,7 +72,6 @@ const columns = [
 ];
 
 const rows = [
-  { id: '',Date: '', TranscationNo: '', INVNo: '', PONo: '' ,PaymentMethod: '', PaymentType: '',CrytroCurrency: ''},
 ];
 
 export default function PaymentListing(){

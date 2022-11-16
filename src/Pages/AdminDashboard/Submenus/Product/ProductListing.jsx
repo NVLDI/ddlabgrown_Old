@@ -65,7 +65,7 @@ const columns = [
 ];
 
 const rows = [
-  { id: '',Date: '',ProductCode:'', ProductName: '', Shape: '', Cutting: '' ,Color: ''},
+  
 ];
 
 export default function ProductListing(){

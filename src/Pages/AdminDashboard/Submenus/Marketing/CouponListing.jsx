@@ -66,7 +66,6 @@ const columns = [
 ];
 
 const rows = [
-  { id: '',DateCreate: '', Code: '', INVNo: '', DNo: '' ,DiscountType: '', CreateBy: ''},
   
 ];
 

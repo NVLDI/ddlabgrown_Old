@@ -65,7 +65,7 @@ const columns = [
 ];
 
 const rows = [
-  { id: '',Date: '', ASMNo: '', INVNo: '', DistributorNo: '' ,DeliveryMethod: '', PaymentType: ''}
+ 
 ];
 
 export default function AfterSalesServiceListing(){

@@ -58,7 +58,7 @@ const columns = [
 ];
 
 const rows = [
-  { id: '',Date: '',InvoiceNo:'', PurchaseOrderNo: '', ProductCode: '', ProductDes: '' ,Createby: ''},
+  
 ];
 
 export default function InvoiceListing(){

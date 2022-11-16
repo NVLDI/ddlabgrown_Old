@@ -65,7 +65,6 @@ const columns = [
 ];
 
 const rows = [
-  { id: '',Date: '', DeliveryNo: '', INVNo: '', PONo: '' ,DeliveryMethod: '', PaymentType: ''},
 ];
 
 export default function DeliveryListing(){

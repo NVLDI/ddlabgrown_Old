@@ -65,7 +65,6 @@ const columns = [
 ];
 
 const rows = [
-  { id: '',Date: '', DistributorNo: '', name: '', NICNo: '' ,phoneNo: '', address: ''},
   
 ];
 

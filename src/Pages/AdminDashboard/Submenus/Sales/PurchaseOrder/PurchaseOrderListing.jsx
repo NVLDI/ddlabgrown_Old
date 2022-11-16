@@ -71,7 +71,6 @@ const columns = [
 ];
 
 const rows = [
-  { id: '',Date: '', PurchaseOrderNo: '', ProductCode: '', ProductDes: '' ,Createby: '', AmendBy: '', AmendDate: ''},
   
 ];
 
