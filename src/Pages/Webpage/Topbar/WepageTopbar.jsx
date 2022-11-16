@@ -13,11 +13,13 @@ export default function WepageTopbar() {
             Product
           </div>
         </Link>
+        <div class="vl"></div>
       <Link to="/adminlogin" className='link'>
           <div className="topbarIconsContainer">
             Admin Login
           </div>
       </Link>
+      <div class="vl"></div>
       <Link to="/distributorlogin" className='link'>
           <div className="topbarIconsContainer">
               Distributor Login
