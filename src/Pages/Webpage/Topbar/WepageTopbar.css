@@ -1,4 +1,4 @@
-.Fronttopbar{
+.topbar{
     width: 100%;
     height: 50px;
     background-color: rgb(64, 64, 64);
@@ -6,27 +6,47 @@
     top: 0;
     z-index: 999;
 }
-.FronttopbarWrapper{
+.topbarWrapper{
     height: 100%;
     padding: 0px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.Frontlogo{
+.logo{
     font-weight: normal;
     font-size: 25px;
     color: white;
     cursor: pointer;
 }
-.FronttopRight
+.topRight
 {
     display: flex;
     align-items: center;
 }
-.FronttopbarIconsContainer{
+.topbarIconsContainer{
     position: relative;
     cursor: pointer;
-    margin-right: 25px;
+    margin-right: 10px;
     color: white;
+}
+.topIconBag{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+}
+.topAvatar{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
 }
