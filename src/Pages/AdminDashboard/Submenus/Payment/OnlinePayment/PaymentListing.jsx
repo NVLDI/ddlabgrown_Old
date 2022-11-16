@@ -82,7 +82,7 @@ export default function PaymentListing(){
         <div className="container">
         <Sidebar/>
     <div className="PaymentListing">
-         <h3 className="PaymentListingClient">Online Payment Listing</h3>
+         <h2 className="PaymentListingClient">Online Payment Listing</h2>
         <div style={{ height: 630, width: '100%' }}>
             <DataGrid
             rows={rows}

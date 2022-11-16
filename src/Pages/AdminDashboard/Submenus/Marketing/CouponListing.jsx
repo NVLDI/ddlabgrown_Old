@@ -77,7 +77,7 @@ export default function CouponListing(){
         <div className="container">
         <Sidebar/>
     <div className="CouponListing">
-         <h3 className="CouponOrderListingClient">Coupon Listing</h3>
+         <h2 className="CouponOrderListingClient">Coupon Listing</h2>
         <div style={{ height: 630, width: '100%' }}>
             <DataGrid
             rows={rows}

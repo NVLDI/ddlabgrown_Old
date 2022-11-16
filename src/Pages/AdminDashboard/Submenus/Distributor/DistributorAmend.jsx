@@ -140,7 +140,7 @@ export default function DistributorAmend() {
                         <div className="newDistributorItem">
                               
                         </div>
-                        <button className="distributorCreateButton" onClick={navigateDistributor}>Save</button>
+                        <button className="distributorCreateButton" onClick={navigateDistributor}>Update</button>
                         <button className="distributorClearButton">Cancel</button>
                         </form>
                         </div>

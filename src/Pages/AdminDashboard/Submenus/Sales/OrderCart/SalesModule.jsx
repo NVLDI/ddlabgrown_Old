@@ -3,13 +3,62 @@ import Sidebar from "../../../../../Components/Sidebar/Sidebar";
 import Topbar from "../../../../../Components/Topbar/Topbar";
 
 export default function SalesModule(){
+    let ts = Date.now();
+        let date_ob = new Date(ts);
+        let date = date_ob.getDate();
+        let month = date_ob.getMonth() + 1;
+        let year = date_ob.getFullYear();
+        let Current = date+"/"+month+ "/"+year;
     return(
         <div>
         <Topbar/>
         <div className="container">
         <Sidebar/>
             <div className="Sales">
-            <h3 className="SalesWidgetClient">Hello welcome to Order Cart</h3>
+            <h2 className="SalesClient">Order Cart</h2>
+            <div className="SalesWidgetClient">
+            <form className="newSalesForm">
+                        <div className="newSalesItem">
+                                <label className="namedefine">Distributor No</label>
+                                <input type="text" placeholder=""/>
+                                <label className="namedefine">Distributor Name</label>
+                                <input type="text" placeholder="" disabled/>
+                                <label className="namedefine">Contact No</label>
+                                <input type="text" placeholder="" disabled/>
+                        </div>
+                        <div className="newSalesItem">
+                
+                        </div>
+                        <div className="newSalesItem">
+                                <label>Date</label>
+                                <input type="text" placeholder="Date" value={Current}/>
+                        </div>
+                        </form>
+            </div>
+            <div className="SalesWidgetClient">
+            <form className="newSalesForm">
+                        <div className="newSalesItem">
+                              
+                        </div>
+                        <div className="newSalesItem">
+                
+                        </div>
+                        <div className="newSalesItem">
+                                
+                        </div>
+                        <div className="newSalesItem">
+                              
+                        </div>
+                        <div className="newSalesItem">
+                
+                        </div>
+                        <div className="newSalesItem">
+                                
+                        </div>
+                        <button className="SalesCreateButton">Procced</button>
+                        <button className="SalesClearButton">Cancel</button>
+                        </form>
+            </div>
             </div>
         </div>
         </div>

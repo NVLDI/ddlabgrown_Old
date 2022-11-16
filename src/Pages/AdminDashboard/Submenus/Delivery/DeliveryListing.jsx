@@ -75,7 +75,7 @@ export default function DeliveryListing(){
         <div className="container">
         <Sidebar/>
     <div className="DeliveryListing">
-         <h3 className="DeliveryOrderListingClient">Delivery Listing</h3>
+         <h2 className="DeliveryOrderListingClient">Delivery Listing</h2>
         <div style={{ height: 630, width: '100%' }}>
             <DataGrid
             rows={rows}

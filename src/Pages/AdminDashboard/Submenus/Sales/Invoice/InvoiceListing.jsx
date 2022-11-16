@@ -68,7 +68,7 @@ export default function InvoiceListing(){
         <div className="container">
         <Sidebar/>
     <div className="InvoiceListing">
-         <h3 className="InvoiceListingClient">Invoice Listing</h3>
+         <h2 className="InvoiceListingClient">Invoice Listing</h2>
         <div style={{ height: 630, width: '100%' }}>
             <DataGrid
             rows={rows}

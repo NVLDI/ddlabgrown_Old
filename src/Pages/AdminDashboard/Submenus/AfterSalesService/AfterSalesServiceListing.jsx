@@ -75,7 +75,7 @@ export default function AfterSalesServiceListing(){
         <div className="container">
         <Sidebar/>
     <div className="AfterSalesServiceListing">
-         <h3 className="AfterSalesServiceListingClient">After Sales Service Listing</h3>
+         <h2 className="AfterSalesServiceListingClient">After Sales Service Listing</h2>
         <div style={{ height: 630, width: '100%' }}>
             <DataGrid
             rows={rows}
