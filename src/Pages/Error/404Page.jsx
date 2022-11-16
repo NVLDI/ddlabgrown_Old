@@ -10,7 +10,6 @@ export default function Page() {
     <h3>Back</h3>
     </Link>
   </div>
-        <img className='imagedata' src="https://www.pixelstalk.net/wp-content/uploads/2016/04/Dimond-wallpapers-HD-free-download.jpg" alt=""/>
         <div class="middle">
     <h1>DD Lab Grown Diamond COMING SOON</h1>
     <h4 className='hcolor'>Product Page is under construction </h4>

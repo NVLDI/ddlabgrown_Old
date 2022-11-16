@@ -1,17 +1,17 @@
 .middle {
     position: absolute;
-    top: 32%;
+    top: 50%;
     left: 50%;
-   font-size: 25px;
+   font-size: 18px;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
   .topleft {
     position: absolute;
     top: 0;
     left: 16px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
   .link{
     text-decoration: none;
@@ -19,7 +19,7 @@
   }
   .hcolor
   {
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
   }
   .imagedata
   {

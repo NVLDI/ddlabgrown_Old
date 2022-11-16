@@ -55,8 +55,6 @@ export default function SalesModule(){
                         <div className="newSalesItem">
                                 
                         </div>
-                        <button className="SalesCreateButton">Procced</button>
-                        <button className="SalesClearButton">Cancel</button>
                         </form>
             </div>
             </div>
