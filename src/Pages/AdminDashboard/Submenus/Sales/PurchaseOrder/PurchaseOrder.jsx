@@ -51,7 +51,7 @@ export default function PurchaseOrder() {
     <div className="container">
     <Sidebar/>
     <div className="PurchaseOrderAmend">
-        <h2 className="PurchaseOrderAmendClient">Purchase Order Amend</h2>
+        <h2 className="PurchaseOrderAmendClient">Purchase Order</h2>
         <div className="PurchaseOrderAmendWidgetClient">
         <form className="newPurchaseAmendForm">
                         <div className="newPurchaseAmendItem">
@@ -90,8 +90,7 @@ export default function PurchaseOrder() {
                                 
                         </div>
                         <div className="newPurchaseAmendItem">
-                                <label className="namedefine">Amend By</label>
-                                <input type="text" placeholder=""/>
+                        
                                 
                         </div>
                         <button className="PurchaseAmendCreateButton">Procced</button>
