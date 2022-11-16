@@ -3,7 +3,7 @@
     margin: 0px;
     width: 100%;
 }
-.middle {
+.middle-1{
     position: absolute;
     top: 32%;
     left: 50%;
@@ -12,7 +12,7 @@
     text-align: center;
     color: black;
   }
-  .hcolor
+  .hcolor-1
   {
     color:rgb(0, 0, 0);
   }
