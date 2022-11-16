@@ -10,12 +10,11 @@ export default function Page() {
     <h3>Back</h3>
     </Link>
   </div>
-        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/04/Dimond-wallpapers-HD-free-download.jpg" alt="" />
+        <img className='imagedata' src="https://www.pixelstalk.net/wp-content/uploads/2016/04/Dimond-wallpapers-HD-free-download.jpg" alt=""/>
         <div class="middle">
     <h1>DD Lab Grown Diamond COMING SOON</h1>
-    <hr/>
-    <h4>Product Page is under construction</h4>
-    <h5>We will be back soon</h5>
+    <h4 className='hcolor'>Product Page is under construction </h4>
+    <h6 className='hcolor'>We will be back soon</h6>
     </div>
     </div>
   )
