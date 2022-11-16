@@ -50,11 +50,11 @@ export default function PurchaseOrder() {
     <Topbar/>
     <div className="container">
     <Sidebar/>
-    <div className="purchaseOrder">
-            <h2 className="PurchaseClient">Purchase Order</h2>
-            <div className="purchaseWidgetClient">
-            <form className="newPurchaseForm">
-                        <div className="newPurchaseItem">
+    <div className="PurchaseOrderAmend">
+        <h2 className="PurchaseOrderAmendClient">Purchase Order Amend</h2>
+        <div className="PurchaseOrderAmendWidgetClient">
+        <form className="newPurchaseAmendForm">
+                        <div className="newPurchaseAmendItem">
                                 <label>Purchase Order No</label>
                                 <input type="text" placeholder=""/>
                                 <label className="namedefine">Distributor No</label>
@@ -63,19 +63,17 @@ export default function PurchaseOrder() {
                                 <input type="text" placeholder="" disabled/>
                                 <label className="namedefine">Contact No</label>
                                 <input type="text" placeholder="" disabled/>
-                                
                         </div>
-                        <div className="newPurchaseItem">
+                        <div className="newPurchaseAmendItem">
 
                         </div>
-                        <div className="newPurchaseItem">
+                        <div className="newPurchaseAmendItem">
                                 <label>Date</label>
                                 <input type="text" placeholder="Date" value={Current}/>  
                         </div>
                         </form>
-                        
-            </div>
-            <div className='table' style={{ height: 500, width: '96%'}}>
+        </div>
+        <div className='table' style={{ height: 500, width: '96%'}}>
             <DataGrid
             rows={rows}
             columns={columns}
@@ -84,18 +82,24 @@ export default function PurchaseOrder() {
             disableSelectionOnClick
         />
     </div>
-    <div className="purchaseWidgetClient">
-    <form className="newPurchaseForm">
-    <div className="newPurchaseItem">
+    <div className="PurchaseOrderAmendClient">
+    <form className="newPurchaseAmendForm">
+    <div className="newPurchaseAmendItem">
                                 <label className="namedefine">Create By</label>
                                 <input type="text" placeholder=""/>
+                                
                         </div>
-                        <button className="PurchaseCreateButton">Save</button>
-                                <button className="PurchaseClearButton">Cancel</button>
+                        <div className="newPurchaseAmendItem">
+                                <label className="namedefine">Amend By</label>
+                                <input type="text" placeholder=""/>
+                                
+                        </div>
+                        <button className="PurchaseAmendCreateButton">Procced</button>
+                        <button className="PurchaseAmendClearButton">Cancel</button>
                         </form>
       </div>
       
-            </div>
+            </div>        
     </div>
     </div>
   )
