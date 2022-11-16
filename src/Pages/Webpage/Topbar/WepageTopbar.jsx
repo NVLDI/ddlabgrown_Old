@@ -5,9 +5,14 @@ export default function WepageTopbar() {
   return (
     <div className="Fronttopbar">
     <div className="FronttopbarWrapper">
-      <div className="FronttopLeft"><sapn className="Frontlogo">DD Lab Grown Diamond</sapn>
+      <div className="FronttopLeft"><span className="Frontlogo">DD Lab Grown Diamond</span>
       </div>
       <div className="FronttopRight">
+      <Link to="/Error" className='link'>
+      <div className="FronttopbarIconsContainer">
+            Product
+          </div>
+        </Link>
       <Link to="/adminlogin" className='link'>
           <div className="FronttopbarIconsContainer">
             Admin Login

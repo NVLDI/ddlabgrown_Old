@@ -3,9 +3,14 @@
 }
 .AdminProfileWidgetClient{
     display: flex;
-    margin: 20px;
+    margin: 20px 90px;
 }
 .container{
     display: flex;
     margin: 0px;
   }
+  .AdminClient{
+    display: flex;
+    margin: 20px 40px;
+    color:rgb(125, 125, 125);
+}

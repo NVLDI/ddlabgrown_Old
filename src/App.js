@@ -41,6 +41,7 @@ import AdminProfile from './Pages/AdminDashboard/AdminDetails/AdminProfile'
 import DistributerProfile from './Pages/DistributorDashboard/DistributorProfile/DistributorProfile';
 import PurchaseOrder from './Pages/AdminDashboard/Submenus/Sales/PurchaseOrder/PurchaseOrder';
 import CreateInvoice from './Pages/AdminDashboard/Submenus/Sales/Invoice/CreateInvoice';
+import Error from "./Pages/Error/404Page";
 function App() {
   return (
     <Router>
@@ -50,7 +51,7 @@ function App() {
       <Route exact path="/distributorprofile" element={<DistributerProfile/>}/>
 
       <Route exact path="/" element={<Display/>}/>
-
+      <Route exact path="/Error" element={<Error/>}/>
       <Route exact path = "/adminlogin" element={<AdminLogin/>}/>
       <Route exact path ="/distributorLogin" element={<DistributorLogin/>}/>
       <Route exact path ="/aboutus" element={<AboutUs/>}/>
