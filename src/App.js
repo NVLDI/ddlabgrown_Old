@@ -42,12 +42,14 @@ import DistributerProfile from './Pages/DistributorDashboard/DistributorProfile/
 import PurchaseOrder from './Pages/AdminDashboard/Submenus/Sales/PurchaseOrder/PurchaseOrder';
 import CreateInvoice from './Pages/AdminDashboard/Submenus/Sales/Invoice/CreateInvoice';
 import Error from "./Pages/Error/404Page";
+import Registration from './Components/Registration';
 function App() {
   return (
     <Router>
      
       <Routes>
       <Route exact path="/adminprofile" element={<AdminProfile/>}/>
+      <Route exact path="/registration" element={<Registration/>}/>
       <Route exact path="/distributorprofile" element={<DistributerProfile/>}/>
 
       <Route exact path="/" element={<Display/>}/>
