@@ -115,7 +115,7 @@ export default function Product(){
                     <option value="5">RM</option>
                     </select>
                     </div>
-                    <div className='newDistributorItem-1-button'>
+                    <div className='newProductItem-1-button'>
             <button className='buttondisplay'>Save</button>
             <button className='buttondisplay'>Cancel</button>
             </div>

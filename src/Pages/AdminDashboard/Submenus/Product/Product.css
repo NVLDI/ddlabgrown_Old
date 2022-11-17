@@ -38,14 +38,6 @@
     border: 1px solid gray;
     border-radius: 5px;
 }
-.autocomplete
-{
-    height: 32px;
-    padding: 10px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    width: 60;
-}
 .namedefine
 {
     margin-top: 10px;
@@ -80,4 +72,16 @@
     width: 295px;
     height: 300px;
     margin-top: 5px;
+}
+.newProductItem-1-button
+{ 
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.newproductItem>select{
+    height: 33px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
