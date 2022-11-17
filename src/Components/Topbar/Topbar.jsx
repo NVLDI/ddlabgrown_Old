@@ -25,7 +25,6 @@ export default function Topbar() {
                 <Settings/>
             </div>
             </Tooltip>
-            
             <Link to={"/adminprofile"} className='link'>
             <Tooltip title="Profile">
             <img src="https://www.hollywoodreporter.com/wp-content/uploads/2019/03/avatar-publicity_still-h_2019.jpg?w=681&h=383&crop=1" alt="" className="topAvatar" />
