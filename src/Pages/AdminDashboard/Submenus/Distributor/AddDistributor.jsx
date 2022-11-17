@@ -1,4 +1,5 @@
 import "./Distributor.css"
+import "./Registration.css"
 import {useNavigate} from "react-router-dom";
 import Sidebar from "../../../../Components/Sidebar/Sidebar";
 import Topbar from "../../../../Components/Topbar/Topbar";
@@ -22,9 +23,9 @@ export default function Distributor(){
         <div className="Distributor">
         <div>
          <div>
-            <h1 className='RegClient'>
+            <h2 className='RegClient'>
                 Distributor Registration
-            </h1>
+            </h2>
         </div>
         <h3 className='RegClientNo'>Distributor No: D-00000001</h3>
         <form className='form-display'>
