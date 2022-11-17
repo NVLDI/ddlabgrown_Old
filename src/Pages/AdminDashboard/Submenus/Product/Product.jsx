@@ -2,6 +2,7 @@ import "./Product.css"
 import Sidebar from "../../../../Components/Sidebar/Sidebar";
 import Topbar from "../../../../Components/Topbar/Topbar";
 import {useNavigate} from "react-router-dom";
+import Publish from '@mui/icons-material/Publish';
 
 export default function Product(){
     let ts = Date.now();
@@ -27,7 +28,7 @@ export default function Product(){
                                 
                     </div>
                     <div className="newproductItem">
-                                
+                             
                     </div>
                     <div className="newproductItem">
                     <label>Date</label>
@@ -38,7 +39,11 @@ export default function Product(){
             <div className="productWidgetClient">
                     <form className="productForm">
                     <div className="newproductItem">
-                                
+                    <div className="ProductUpload">
+            <img className="ProductImg" src="" alt="" />
+            <label htmlFor="file"><Publish/></label>
+            <input className="namedefine" type="file" id="file" style={{display:"none"}}/>
+            </div>
                     </div>
                     <div className="newproductItem">
                     <label>Product Code</label>
@@ -110,6 +115,10 @@ export default function Product(){
                     <option value="5">RM</option>
                     </select>
                     </div>
+                    <div className='newDistributorItem-1-button'>
+            <button className='buttondisplay'>Save</button>
+            <button className='buttondisplay'>Cancel</button>
+            </div>
                     </form>
             </div>
             </div>
