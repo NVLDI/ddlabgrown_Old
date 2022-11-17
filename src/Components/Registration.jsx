@@ -49,17 +49,7 @@ export default function Registration() {
             <label>Zip Code</label>
             <input type="text" placeholder=""/>                              
         </div>
-        <div className='newDistributorItem-1'>
-        <label>Occupation</label>
-            <select>
-                <option value='1'>None</option>
-            </select>                             
         </div>
-        <div className='newDistributorItem-1-button'>
-        <button>Save</button>
-        </div>
-        </div>
-        
         <div className="column newDistributorItem-1">
         <h4 className='RegWidgetClient-sub'>Login & Verification Details</h4>
         <div className='newDistributorItem-1'>
@@ -90,6 +80,12 @@ export default function Registration() {
             <label>E-Mail Verification</label>
             <input type="text" placeholder=""/>                                
         </div>
+        <div className='newDistributorItem-1'>
+        <label>Occupation</label>
+            <select>
+                <option value='1'>None</option>
+            </select>                             
+        </div>
         </div>
         <div className=' column newDistributorItem-1'>
             <h4 className='RegWidgetClient-sub'>Bank Details</h4>
@@ -118,7 +114,9 @@ export default function Registration() {
             <select>
                 <option value='1'>None</option>
             </select>                             
-        </div>
+            </div>
+            </div>
+            <div className=' column newDistributorItem-1'>
             <h4 className='RegWidgetClient-sub'>Referral Code</h4>
             <div className='newDistributorItem-1'>
             <label>Referral Code</label>
@@ -132,6 +130,10 @@ export default function Registration() {
             <label>Contact No</label>
             <input type="text" placeholder=""/>   
             </div>
+            <div className='newDistributorItem-1-button'>
+        <button className='buttondisplay'>Save</button>
+        <button className='buttondisplay'>Cancel</button>
+        </div>
         </div> 
         </form>
     </div>
