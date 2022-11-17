@@ -4,15 +4,15 @@ import "./Registration.css"
 export default function Registration() {
   return (
     <div>
-        <form>
-        <div>
+         <div>
             <h1 className='RegClient'>
                 Distributor Registration
             </h1>
         </div>
         <h3 className='RegClientNo'>Distributor No: D-00000001</h3>
+        <form className='form-display'>
         <div className="column newDistributorItem-1">
-        <h4>Personal Details</h4>
+        <h4 className='RegWidgetClient-sub'>Personal Details</h4>
         <div className='newDistributorItem-1'>
             <label>First Name</label>
             <input type="text" placeholder=""/>                                
@@ -61,7 +61,7 @@ export default function Registration() {
         </div>
         
         <div className="column newDistributorItem-1">
-        <h4>Login & Verification Details</h4>
+        <h4 className='RegWidgetClient-sub'>Login & Verification Details</h4>
         <div className='newDistributorItem-1'>
             <label>User Name</label>
             <input type="text" placeholder=""/>                                
@@ -92,7 +92,7 @@ export default function Registration() {
         </div>
         </div>
         <div className=' column newDistributorItem-1'>
-            <h4>Bank Details</h4>
+            <h4 className='RegWidgetClient-sub'>Bank Details</h4>
             <div className='newDistributorItem-1'>
             <label>Bank Name</label>
             <input type="text" placeholder=""/>   
@@ -119,7 +119,7 @@ export default function Registration() {
                 <option value='1'>None</option>
             </select>                             
         </div>
-            <h4>Referral Code</h4>
+            <h4 className='RegWidgetClient-sub'>Referral Code</h4>
             <div className='newDistributorItem-1'>
             <label>Referral Code</label>
             <input type="text" placeholder=""/>   

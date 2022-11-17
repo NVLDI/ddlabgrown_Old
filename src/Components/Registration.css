@@ -6,8 +6,9 @@
 .RegClientNo
 {
     display: flex;
-    margin: 20px;
+    margin: 50px;
     color:rgb(125, 125, 125);
+    margin-top: 10px;
 }
 .column {
     float: left;
@@ -62,4 +63,12 @@
     border: 1px solid gray;
     border-radius: 5px;
   }
-  
+  .RegWidgetClient-sub{
+    display: flex;
+    color:rgb(32, 84, 255);
+}
+.form-display
+{
+    margin: 50px;
+    margin-top: -60px;
+}
