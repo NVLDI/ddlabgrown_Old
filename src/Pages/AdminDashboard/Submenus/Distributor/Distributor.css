@@ -1,97 +1,97 @@
 .Distributor{
     flex: 4;
 }
-.container{
-    display: flex;
-    margin: 0px;
-  }
-.DistributorClient{
+.RegClient{
     display: flex;
     margin: 20px 40px;
     color:rgb(125, 125, 125);
 }
-.DistributorWidgetClient{
-    display: flex;
-    margin: 20px 90px;
-}
-.newDistributorForm{
-    display: flex;
-    flex-wrap: wrap;
-}
-.newDistributorItem
+.RegClientNo
 {
-    width: 300px;
+    display: flex;
+    margin: 50px;
+    color:rgb(125, 125, 125);
+    margin-top: 10px;
+}
+.column {
+    float: left;
+    width: 28%;
+    padding: 5px;
+    height: max-content;
+  }
+  .newDistributorItem-1
+{
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-right: 20px;
 }
-.newDistributorItem>label{
+.newDistributorItem-1>label{
     margin-bottom: 5px;
     font-size: 12px;
     font-weight: 500;
     color:rgb(125, 125, 125);
 }
-.newDistributorItem>input{
+.newDistributorItem-1>input{
     height: 10px;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 5px;
 }
-.distributorUpload>label{
-    color:rgb(125, 125, 125);
-    display: flex;
-    cursor: pointer;
+.newDistributorItem-1>select{
+    height: 33px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
-.distributorImg{
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-top: 10px;
+.newDistributorItem-1-button
+{ 
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
-.distributorCreateButton
-{
-    width: 100px;
-    border: none;
-    background-color: gray;
-    color: white;
-    padding: 7px 10px;
-    font-weight: 600;
-    border-radius: 10px;
-    margin-top: 35px;
-    margin-left: 405px;
-    cursor: pointer;
-}
-.distributorClearButton
-{
-    width: 100px;
-    border: none;
-    background-color: gray;
-    color: white;
-    padding: 7px 10px;
-    font-weight: 600;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 35px;
-    margin-left: 10px;
-}
-.container{
-    display: flex;
-    margin: 0px;
+.pull-right {
+    float: right;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 500;
   }
-.autocomplete
-{
-    height: 32px;
+  .pull-right-text {
+    float: right;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    height: 10px;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 5px;
-    width: 60;
+  }
+  .RegWidgetClient-sub{
+    display: flex;
+    color:rgb(32, 84, 255);
 }
-.namedefine
+.form-display
 {
-    margin-top: 10px;
+    margin: 50px;
+    margin-top: -60px;
 }
-.namedefine-up{
-    margin-top: -17px;
+.buttondisplay
+{
+    width: 100px;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: 8px 8px;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.newDistributorItem-Referal
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    margin-right: 20px;
 }

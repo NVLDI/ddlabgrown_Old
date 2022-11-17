@@ -1,5 +1,4 @@
 import "./Distributor.css"
-import "./Registration.css"
 import {useNavigate} from "react-router-dom";
 import Sidebar from "../../../../Components/Sidebar/Sidebar";
 import Topbar from "../../../../Components/Topbar/Topbar";
