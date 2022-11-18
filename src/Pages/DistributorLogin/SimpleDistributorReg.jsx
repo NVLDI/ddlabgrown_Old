@@ -5,27 +5,34 @@ import TextField from '@mui/material/TextField';
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import {useNavigate} from "react-router-dom";
+import axios from "axios";
 
 export default function SimpleDistributorReg() {
     const navigate = useNavigate();
     const paperStyle={padding:'15px 20px', width:600,margin:'15px auto'}
-    const [password,setpassword]=useState('')
-    const [conPassword,setConPassword]=useState('')
-    const [userName,setUsername]=useState('')
-    const [Email,setEmail]=useState('')
-    const [verification, setverification]=useState('')
-    const [sponsor,setsponsor]=useState('')
-    const handleClick=(e)=>{
-        navigate('/distributorHomepage');
+    const[inputs,setInputs]=useState({
+      "username":"",
+      "password":"",
+      "email":"",
+      "sponsor_id":""
+    });
+    const[error,setError]=useState(null);
+    const handleChange = e=>{
+      setInputs(prev=>({...prev,[e.target.name]:e.target.value}))
+    };
+    const handleClick= async(e)=>{
+      e.preventDefault()
+      try {
+        await axios.post("http://localhost:8800/api/distributor/disregister",inputs)
+      } 
+      catch (error){  
+        setError(error.response.data);
       }
+    }
+    console.log(error)
       const ResetField=(e)=>
       {
-        setConPassword(()=> "")
-        setEmail(()=> "")
-        setpassword(()=> "")
-        setUsername(()=> "")
-        setverification(()=> "")
-        setsponsor(()=>"")
+        
       }
   return (
     <div><Container>
@@ -40,29 +47,33 @@ noValidate
 autoComplete="off"
 >
 <TextField id="outlined-basic" label="User Name" variant="outlined" fullWidth
-value={userName}
-onChange={(e)=>setUsername(e.target.value)}
+name="username"
+onChange={handleChange}
 />
 <TextField id="outlined-basic" label="Password" variant="outlined" type="password" fullWidth
-value={password}
-onChange={(e)=>setpassword(e.target.value)}
+name="password"
+onChange={handleChange}
 />
 <TextField id="outlined-basic" label="Confirm Password" variant="outlined" type="password" fullWidth
-value={conPassword}
-onChange={(e)=>setConPassword(e.target.value)}
+onChange={handleChange}
 />
 <TextField id="outlined-basic" label="E-mail" variant="outlined" fullWidth
-value={Email}
-onChange={(e)=>setEmail(e.target.value)}
+name="email"
+onChange={handleChange}
 />
 <TextField id="outlined-basic" label="Verification Code" variant="outlined" fullWidth
-value={verification}
-onChange={(e)=>setverification(e.target.value)}
+onChange={handleChange}
 />
 <TextField id="outlined-basic" label="Sponsor Id" variant="outlined" fullWidth
-value={sponsor}
-onChange={(e)=>setsponsor(e.target.value)}
+name="sponsor_id"
+onChange={handleChange}
 />
+
+<br/><br/>
+{error && error}
+<br/>
+<br/>
+<br/>
 <Button variant="contained" onClick={handleClick}>
     Submit
 </Button>
