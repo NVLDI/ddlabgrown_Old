@@ -9,17 +9,7 @@ export default function AdminLogin() {
   const paperStyle={padding:'35px 20px', width:600,margin:'20px auto'}
   const navigate = useNavigate();
   const [admin_txt, setAdmin] = useState('');
-  const handleAdmin = event=>
-  {
-    setAdmin(event.target.value);
-    console.log('value is:', event.target.value);
-  };
   const [password_txt, setPassword] = useState('');
-  const handlePassword = event=>
-  {
-    setPassword(event.target.value);
-    console.log('value is', event.target.value);
-  };
     const navigateDistributor = () => {
       if((admin_txt === 'admin')&&(password_txt === 'admin123'))
       {
@@ -28,11 +18,11 @@ export default function AdminLogin() {
       else
       {
         alert("Incorrect Admin and Password")
-        
       }
 };
-const SignUp = () => {
-    navigate('/adminreg');
+const Reset = () => {
+  setAdmin(()=> "")
+  setPassword(()=> "")
 };
   return (
     <div>
@@ -59,8 +49,8 @@ onChange={(e)=>setPassword(e.target.value)}
 <Button variant="contained" onClick={navigateDistributor}>
   Login
 </Button>
-<Button variant="contained" onClick={SignUp}>
-  Sign Up
+<Button variant="contained" onClick={Reset}>
+  Reset
 </Button>
 </Box>
 </Paper>
