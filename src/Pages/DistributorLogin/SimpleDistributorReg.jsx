@@ -4,10 +4,10 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
+import {useNavigate} from "react-router-dom";
 
 export default function SimpleDistributorReg() {
-
+    const navigate = useNavigate();
     const paperStyle={padding:'15px 20px', width:600,margin:'15px auto'}
     const [password,setpassword]=useState('')
     const [conPassword,setConPassword]=useState('')
@@ -16,7 +16,7 @@ export default function SimpleDistributorReg() {
     const [verification, setverification]=useState('')
     const [sponsor,setsponsor]=useState('')
     const handleClick=(e)=>{
-        
+        navigate('/distributorHomepage');
       }
       const ResetField=(e)=>
       {

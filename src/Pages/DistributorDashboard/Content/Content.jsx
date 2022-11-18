@@ -3,8 +3,14 @@ import React from 'react'
 export default function Content() {
   return (
     <div>
-        <img src="https://static.wixstatic.com/media/5dee0c_ffa00a461a7c4ea5930ed5d7784b33fb~mv2.jpg/v1/fill/w_2156,h_1051,al_c,q_90,enc_auto/5dee0c_ffa00a461a7c4ea5930ed5d7784b33fb~mv2.jpg" alt="" />
-        
+        <div className="container">
+        <div className="middle-1">
+        <img className='data' src="https://www.pngkit.com/png/full/989-9897010_free-png-transparent-diamond-crown-png-image-with.png" alt=""/>
+        <h1>DD Lab Grown Diamond COMING SOON</h1>
+        <h4 className='hcolor-1'>Distributor Page is under construction </h4>
+        <h6 className='hcolor-1'>We will be back soon</h6>
+        </div>
+        </div>
     </div>
   )
 }
