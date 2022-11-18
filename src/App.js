@@ -43,6 +43,7 @@ import PurchaseOrder from './Pages/AdminDashboard/Submenus/Sales/PurchaseOrder/P
 import CreateInvoice from './Pages/AdminDashboard/Submenus/Sales/Invoice/CreateInvoice';
 import Error from "./Pages/Error/404Page";
 import Registration from './Components/Registration';
+import AdminReg from './Pages/AdminLogin/AdminRegistration'
 function App() {
   return (
     <Router>
@@ -56,6 +57,7 @@ function App() {
       <Route exact path="/Error" element={<Error/>}/>
       <Route exact path = "/adminlogin" element={<AdminLogin/>}/>
       <Route exact path ="/distributorLogin" element={<DistributorLogin/>}/>
+      <Route exact path = "/adminReg" element={<AdminReg/>}/>
       <Route exact path ="/aboutus" element={<AboutUs/>}/>
       <Route exact path = "/contactus" element={<ContactUs/>}/>
       <Route exact path = "/service" element={<Service/>}/>

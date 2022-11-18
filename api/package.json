@@ -9,5 +9,14 @@
   "author": "",
   "license": "ISC",
   "type": "module",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cookieparser": "^0.1.0",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "phpmyadmin": "^0.0.1-security"
+  }
 }

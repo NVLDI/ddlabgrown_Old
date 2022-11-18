@@ -1,9 +1,9 @@
-import phpmyAdmin from "phpmyadmin"
+import mysql from "mysql"
 
 
-export const db = phpmyAdmin.createConnection({
+export const db = mysql.createConnection({
     host:"localhost",
     user:"root",
     password:"",
-    database:"DDLabGrown"
+    database:"ddlabgrown"
 })
