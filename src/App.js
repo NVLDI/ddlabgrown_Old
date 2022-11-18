@@ -44,6 +44,7 @@ import CreateInvoice from './Pages/AdminDashboard/Submenus/Sales/Invoice/CreateI
 import Error from "./Pages/Error/404Page";
 import Registration from './Components/Registration';
 import AdminReg from './Pages/AdminLogin/AdminRegistration'
+import SimpleDistributorReg from './Pages/DistributorLogin/SimpleDistributorReg'
 function App() {
   return (
     <Router>
@@ -52,7 +53,7 @@ function App() {
       <Route exact path="/adminprofile" element={<AdminProfile/>}/>
       <Route exact path="/registration" element={<Registration/>}/>
       <Route exact path="/distributorprofile" element={<DistributerProfile/>}/>
-
+      <Route exact path="/simpleDistributorReg" element={<SimpleDistributorReg/>}/>
       <Route exact path="/" element={<Display/>}/>
       <Route exact path="/Error" element={<Error/>}/>
       <Route exact path = "/adminlogin" element={<AdminLogin/>}/>

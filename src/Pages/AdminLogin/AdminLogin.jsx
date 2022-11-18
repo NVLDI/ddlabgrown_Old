@@ -28,7 +28,7 @@ const Reset = () => {
     <div>
     <Container>
   <Paper elevation={3} style={paperStyle}>
-      <h1>Admin Login</h1>
+      <h2>Admin Login</h2>
 <Box
 component="form"
 sx={{
