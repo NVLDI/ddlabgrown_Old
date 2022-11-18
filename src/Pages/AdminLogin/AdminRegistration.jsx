@@ -2,16 +2,42 @@ import React, {useState}  from 'react'
 import { Container ,Paper, Button} from '@mui/material';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import Checkbox from '@mui/material/Checkbox';
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 export default function AdminRegistration() {
+    const [checked, setChecked] = React.useState([true, false]);
+
+  const handleChange1 = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setChecked([event.target.checked, event.target.checked]);
+  };
+
+  const handleChange2 = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setChecked([event.target.checked, checked[1]]);
+  };
+
+  const handleChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setChecked([checked[0], event.target.checked]);
+  };
+
+  const children = (
+    <Box sx={{ display: 'flex', flexDirection: 'column', ml: 3 }}>
+      <FormControlLabel
+        label="Child 1"
+        control={<Checkbox checked={checked[0]} onChange={handleChange2} />}
+      />
+      <FormControlLabel
+        label="Child 2"
+        control={<Checkbox checked={checked[1]} onChange={handleChange3} />}
+      />
+    </Box>
+  );
     const paperStyle={padding:'15px 20px', width:600,margin:'15px auto'}
     const [name,setName]=useState('')
-    const [email,setEmail]=useState('')
     const [password,setpassword]=useState('')
     const [conPassword,setConPassword]=useState('')
     const [userName,setUsername]=useState('')
     const [phoneNo,setPhone]=useState('')
-    const [location,setLocation]=useState('')
     const [lastName,setlastname]=useState('')
     const handleClick=(e)=>{
         
@@ -19,9 +45,7 @@ export default function AdminRegistration() {
       const ResetField=(e)=>
       {
         setName(()=> "")
-        setEmail(()=> "")
         setConPassword(()=> "")
-        setLocation(()=> "")
         setPhone(()=> "")
         setpassword(()=> "")
         setUsername(()=> "")
@@ -62,10 +86,16 @@ onChange={(e)=>setConPassword(e.target.value)}
 value={phoneNo}
 onChange={(e)=>setPhone(e.target.value)}
 />
-<TextField id="outlined-basic" label="Location" variant="outlined" fullWidth
-value={location}
-onChange={(e)=>setLocation(e.target.value)}
-/>
+
+  <FormControlLabel control={<Checkbox/>} label="Product"/>
+  <FormControlLabel control={<Checkbox/>} label="Distributor"/>
+  <FormControlLabel control={<Checkbox/>} label="Sales"/>
+  <FormControlLabel control={<Checkbox/>} label="Marketing"/>
+  <FormControlLabel control={<Checkbox/>} label="Payment"/>
+  <FormControlLabel control={<Checkbox/>} label="Delivery"/>
+  <FormControlLabel control={<Checkbox/>} label="After Sales Service"/>
+  <FormControlLabel control={<Checkbox/>} label="All"/>
+  <br/>
 <Button variant="contained" onClick={handleClick}>
     Submit
 </Button>
