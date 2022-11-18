@@ -1,6 +1,7 @@
 import { db } from "../connect.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+
 export const register = (req,res)=>{
     //TODO
     //Checking for admin is avaliable or not
@@ -9,6 +10,7 @@ export const register = (req,res)=>{
         if(err) return res.status(500).json(err);
         if(data.length) return res.status(409).json("Admin Already Exist!");
     //Creating New Admin
+    
     //hiding password
     const salt = bcrypt. genSaltSync(10) ;
     const hashedPassword = bcrypt. hashSync (req. body. password, salt);
@@ -30,11 +32,18 @@ export const login = (req,res)=>{
         const checkPassword =bcrypt.compareSync(req.body.password, data[0].password)
         if(!checkPassword)return res.status(400).json("Wrong password or Admin name")
         const token = jwt.sign({id: data[0].id}, "secretkey");
+
+        const {password, ...others}=data[0]
+
         res.cookie("accessToken",token,{
             httpOnly : true,
-        }).status(200).json()
+        }).status(200).json(others)
     });
 };
 export const logout = (req,res)=>{
     //TODO
+    res.clearCookie("accessToken",{
+        secure:true,
+        sameSite:"none"
+    }).status(200).json("Admin have been Logged out")
 }
