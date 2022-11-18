@@ -3,6 +3,7 @@ import Sidebar from "../../../../Components/Sidebar/Sidebar";
 import Topbar from "../../../../Components/Topbar/Topbar";
 import Publish from '@mui/icons-material/Publish';
 import React,{useState} from "react";
+import axios from "axios";
 
 export default function Product(){
     let ts = Date.now();
@@ -11,50 +12,35 @@ export default function Product(){
         let month = date_ob.getMonth() + 1;
         let year = date_ob.getFullYear();
         let FullDate = date+"/"+month+ "/"+year;
-        const [ProductCode,setProductCode]=useState('');
-        const [ProductName,setProductName]=useState('');
-        const [DiamondShape,setDiamondShape]=useState('');
-        const [ShapeCutting,setShapeCutting]=useState('');
-        const [DiamondColor,setDiamondColor]=useState('');
-        const [DiamondCarat,setDiamondCarat]=useState('');
-        const [DiamondClarity,setDiamondClarity]=useState('');
-        const [CertificateNo,setCertificateNo]=useState('');
-        const [MSRP,setMSRP]=useState('');
-        const [Currency,setCurrency]=useState('');
-        
-        const AddField=(e)=>{
+        const[inputs,setInputs]=useState({
+            "date:":FullDate,
+            "product_code":"",
+            "product_name":"",
+            "diamond_shape":"",
+            "shape_cutting":"",
+            "diamond_color": "",
+            "diamond_carat":"",
+            "diamond_clarity":"",
+            "certificate_no":"",
+            "msrp":"",
+            "currency":""
+        });
+        const[error,setError]=useState(null);
+        const handleChange = e=>{
+            setInputs(prev=>({...prev,[e.target.name]:e.target.value}))
+          };
+        const AddField=async(e)=>{
             e.preventDefault()
-            const AddProduct={FullDate,ProductCode,ProductName,DiamondShape,ShapeCutting,DiamondColor,DiamondCarat,DiamondClarity,CertificateNo,MSRP,Currency}
-            console.log(AddProduct)
-            fetch("http://localhost:8080/Product/AddProduct",{
-            method:"POST",
-            headers:{"Content-Type":"application/json"},
-            body:JSON.stringify(AddProduct)
-          }).then(()=>{
-            console.log("New Client Added")
-            setProductCode(()=> "")
-            setProductName(()=> "")
-            setDiamondShape(()=> "None")
-            setShapeCutting(()=> "None")
-            setDiamondColor(()=> "None")
-            setDiamondCarat(()=> "None")
-            setDiamondClarity(()=> "None")
-            setCertificateNo(()=> "")
-            setMSRP(()=> "")
-            setCurrency(()=> "None")
-          })
-          }
+            try {
+                await axios.post("http://localhost:8800/api/product/addproduct",inputs)
+              } 
+              catch (error){  
+                setError(error.response.data);
+              }
+          };
+          console.log(error)
         const ResetField = () => {
-            setProductCode(()=> "")
-            setProductName(()=> "")
-            setDiamondShape(()=> "None")
-            setShapeCutting(()=> "None")
-            setDiamondColor(()=> "None")
-            setDiamondCarat(()=> "None")
-            setDiamondClarity(()=> "None")
-            setCertificateNo(()=> "")
-            setMSRP(()=> "")
-            setCurrency(()=> "None")
+            
         };
     return(
         <div>
@@ -74,81 +60,78 @@ export default function Product(){
                     </div>
                     <div className="newproductItem">
                     <label>Product Code</label>
-                    <input type="text" placeholder=""
-                    onChange={(e)=>setProductCode(e.target.value)}/>   
+                    <input type="text" placeholder="" name="product_code" onChange={handleChange}/>   
                     <label className="namedefine">Product Name</label>
-                    <input type="text" placeholder=""
-                    onChange={(e)=>setProductName(e.target.value)}/>
+                    <input type="text" placeholder="" name="product_name" onChange={handleChange}/>
                     <label className="namedefine">Diamond Shape</label>
-                    <select id="example" class="autocomplete" onChange={(e)=>setDiamondShape(e.target.value)}>
-                    <option value="1">None</option>
-                    <option value="2">Round</option>
-                    <option value="3">Cushion</option>
-                    <option value="4">Princess</option>
-                    <option value="5">Emerald</option>
-                    <option value="6">Radiant</option>
-                    <option value="7">Asscher</option>
-                    <option value="8">Pear</option>
-                    <option value="9">Marquise</option>
-                    <option value="10">Heart</option>
+                    <select id="example" class="autocomplete" name="diamond_shape" onChange={handleChange}>
+                    <option value="None">None</option>
+                    <option value="Round">Round</option>
+                    <option value="Cushion">Cushion</option>
+                    <option value="Princess">Princess</option>
+                    <option value="Emerald">Emerald</option>
+                    <option value="Radiant">Radiant</option>
+                    <option value="Asscher">Asscher</option>
+                    <option value="Pear">Pear</option>
+                    <option value="Marquise">Marquise</option>
+                    <option value="Heart">Heart</option>
                     </select>
                     <label className="namedefine">Shape Cutting</label>
-                    <select id="example" class="autocomplete" onChange={(e)=>setShapeCutting(e.target.value)}>
-                    <option value="1">None</option>
-                    <option value="2">Good</option>
-                    <option value="3">Very Good</option>
-                    <option value="4">Idea</option>
-                    <option value="5">Prefect Idea</option>
+                    <select id="example" class="autocomplete" name="shape_cutting" onChange={handleChange}>
+                    <option value="None">None</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Idea">Idea</option>
+                    <option value="Prefect Idea">Prefect Idea</option>
                     </select>
                     <label className="namedefine">Diamond Color</label>
-                    <select id="example" class="autocomplete" onChange={(e)=>setDiamondColor(e.target.value)}>
-                    <option value="1">None</option>
-                    <option value="2">D</option>
-                    <option value="3">E</option>
-                    <option value="4">F</option>
-                    <option value="5">G</option>
-                    <option value="6">H</option>
-                    <option value="7">I</option>
-                    <option value="8">J</option>
-                    <option value="9">K</option>
+                    <select id="example" class="autocomplete" name="diamond_color" onChange={handleChange}>
+                    <option value="None">None</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    <option value="H">H</option>
+                    <option value="I">I</option>
+                    <option value="J">J</option>
+                    <option value="K">K</option>
                     </select>
                     </div>
                     <div className="newproductItem">
                     <label>Diamond Carat</label>
-                    <select id="example" class="autocomplete" onChange={(e)=>setDiamondCarat(e.target.value)}>
-                    <option value="1">None</option>
-                    </select>
+                    <input type="text" placeholder="" name="diamond_carat" onChange={handleChange}/>
                     <label className="namedefine">Diamond Clarity</label>
-                    <select id="example" class="autocomplete" onChange={(e)=>setDiamondClarity(e.target.value)}>
-                    <option value="1">None</option>
-                    <option value="2">I1</option>
-                    <option value="3">SI2</option>
-                    <option value="4">SI1</option>
-                    <option value="5">VS2</option>
-                    <option value="6">VS1</option>
-                    <option value="7">VVS2</option>
-                    <option value="8">VVS1</option>
-                    <option value="9">I</option>
-                    <option value="10">FI</option>
+                    <select id="example" class="autocomplete" name="diamond_clarity" onChange={handleChange}>
+                    <option value="None">None</option>
+                    <option value="I1">I1</option>
+                    <option value="SI2">SI2</option>
+                    <option value="SI1">SI1</option>
+                    <option value="VS2">VS2</option>
+                    <option value="VS1">VS1</option>
+                    <option value="VVS2">VVS2</option>
+                    <option value="VVS1">VVS1</option>
+                    <option value="I">I</option>
+                    <option value="FI">FI</option>
                     </select>
                     <label className="namedefine">Certificate No</label>
-                    <input type="text" placeholder="" onChange={(e)=>setCertificateNo(e.target.value)}/>   
+                    <input type="text" placeholder="" name="certificate_no" onChange={handleChange}/>   
                     <label className="namedefine">MSRP</label>
-                    <input type="text" placeholder="" onChange={(e)=>setMSRP(e.target.value)}/>
+                    <input type="text" placeholder="" name="msrp" onChange={handleChange}/>
                     <label className="namedefine">Currency</label>
-                    <select id="example" class="autocomplete" onChange={(e)=>setCurrency(e.target.value)}>
-                    <option value="1">None</option>
-                    <option value="2">HKD</option>
-                    <option value="3">RMB</option>
-                    <option value="4">USD</option>
-                    <option value="5">RM</option>
+                    <select id="example" class="autocomplete" name="currency" onChange={handleChange}>
+                    <option value="None">None</option>
+                    <option value="HKD">HKD</option>
+                    <option value="RMB">RMB</option>
+                    <option value="USD">USD</option>
+                    <option value="RM">RM</option>
                     </select>
                     </div>
                     <div className='newProductItem-1-button'>
             <button className='buttondisplay' onClick={AddField}>Save</button>
             <button className='buttondisplay' onClick={ResetField}>Cancel</button>
             </div>
-                    </form>
+            </form>
+            {error && error}
             </div>
             </div>
         </div>

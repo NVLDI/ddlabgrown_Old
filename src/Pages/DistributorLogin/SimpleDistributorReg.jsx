@@ -2,13 +2,9 @@ import React, {useState}  from 'react'
 import { Container ,Paper, Button} from '@mui/material';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import Checkbox from '@mui/material/Checkbox';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import {useNavigate} from "react-router-dom";
 import axios from "axios";
 
 export default function SimpleDistributorReg() {
-    const navigate = useNavigate();
     const paperStyle={padding:'15px 20px', width:600,margin:'15px auto'}
     const[inputs,setInputs]=useState({
       "username":"",
