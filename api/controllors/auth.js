@@ -10,10 +10,9 @@ export const register = (req,res)=>{
         if(err) return res.status(500).json(err);
         if(data.length) return res.status(409).json("Admin Already Exist!");
     //Creating New Admin
-    
     //hiding password
-    const salt = bcrypt. genSaltSync(10) ;
-    const hashedPassword = bcrypt. hashSync (req. body. password, salt);
+    const salt = bcrypt.genSaltSync(10) ;
+    const hashedPassword = bcrypt.hashSync (req. body. password, salt);
     const q = "INSERT INTO admin (`adminname`,`password`) VALUES (?)";
     const values=[req.body.adminname,hashedPassword]
     db.query(q,[values],(err,data)=>{

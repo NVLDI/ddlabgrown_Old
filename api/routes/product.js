@@ -1,8 +1,8 @@
-import Express  from "express";
-import {addProduct,listProduct} from "../controllors/product.js"
-const router = Express.Router()
+import express  from "express";
+import {addproduct,listproduct} from "../controllors/product.js"
+const router = express.Router()
 
-router.get("/product",addProduct)
-router.get("/listing",)
+router.post("/addproduct",addproduct)
+router.post("/listproduct",listproduct)
 
 export default router
