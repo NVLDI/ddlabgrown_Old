@@ -2,13 +2,15 @@ import React from 'react'
 import SideNav,{Toggle, NavItem, NavIcon, NavText} from '@trendmicro/react-sidenav';
 import "@trendmicro/react-sidenav/dist/react-sidenav.css"
 import "./Sidebar.css"
-
+import {useNavigate} from 'react-router-dom';
 export default function Sidebar() {
+    const navigate = useNavigate();
   return (
    <SideNav
     onSelect={(selected) => {
         // Add your code here
-        console.log(selected)
+        console.log(selected);
+        navigate('/'+selected)
     }}
     className="Mysidebar"
 > 
@@ -34,7 +36,7 @@ export default function Sidebar() {
                 Add Product
             </NavText>
             </NavItem> 
-            <NavItem eventKey="ProductList">
+            <NavItem eventKey="productListing">
             <NavText>
                 Product listing
             </NavText>
@@ -47,12 +49,12 @@ export default function Sidebar() {
             <NavText>
                 Distributor
             </NavText>
-            <NavItem eventKey="AddDiss">
+            <NavItem eventKey="adddistributor">
             <NavText>
                 Add Distributor
             </NavText>
             </NavItem> 
-            <NavItem eventKey="DisList">
+            <NavItem eventKey="distributorListing">
             <NavText>
                 Distributor listing
             </NavText>
@@ -65,27 +67,27 @@ export default function Sidebar() {
             <NavText>
                 Sales
             </NavText>
-            <NavItem eventKey="OrderCart">
+            <NavItem eventKey="sales">
             <NavText>
                 Order Cart
             </NavText>
             </NavItem> 
-            <NavItem eventKey="PurchaseOrder">
+            <NavItem eventKey="purchaseOrder">
             <NavText>
                 Purchase Order
             </NavText>
             </NavItem> 
-            <NavItem eventKey="PoList">
+            <NavItem eventKey="purchaseorderlisting">
             <NavText>
                 Purchase Order Listing
             </NavText>
             </NavItem> 
-            <NavItem eventKey="Invoice">
+            <NavItem eventKey="createInvoice">
             <NavText>
                Invoice
             </NavText>
             </NavItem> 
-            <NavItem eventKey="InvoiceList">
+            <NavItem eventKey="InvoiceListing">
             <NavText>
                Invoice Listing
             </NavText>
@@ -98,53 +100,53 @@ export default function Sidebar() {
             <NavText>
                 Marketing
             </NavText>
-            <NavItem eventKey="coupon">
+            <NavItem eventKey="createCoupon">
             <NavText>
                Coupon
             </NavText>
             </NavItem> 
-            <NavItem eventKey="CouponList">
+            <NavItem eventKey="couponListing">
             <NavText>
                Coupon Listing
             </NavText>
             </NavItem> 
         </NavItem>
-        <NavItem eventKey="payment">
+        <NavItem eventKey="paymentSub">
             <NavIcon>
             <i class="fa-solid fa-money-check-dollar" style={{ fontSize: '1.5em' }}></i>
             </NavIcon>
             <NavText>
                 Payment
             </NavText>
-            <NavItem>
+            <NavItem eventKey="payment">
             <NavText>
                Payment
             </NavText>
             </NavItem> 
-            <NavItem eventKey="OnlinePay">
+            <NavItem eventKey="onlinepaymentListing">
             <NavText>
                Online Payment Listing
             </NavText>
             </NavItem> 
-            <NavItem eventKey="OffLinePay">
+            <NavItem eventKey="offlinepaymentListing">
             <NavText>
                Offline Payment Listing
             </NavText>
             </NavItem> 
         </NavItem>
-        <NavItem eventKey="delivery">
+        <NavItem eventKey="delivery-Sub">
             <NavIcon>
             <i class="fa-solid fa-truck" style={{ fontSize: '1.5em' }}></i>
             </NavIcon>
             <NavText>
                 Delivery
             </NavText>
-            <NavItem eventKey="DeliveryOrder">
+            <NavItem eventKey="delivery">
             <NavText>
                 Delivery Order
             </NavText>
             </NavItem> 
-            <NavItem eventKey="DeliveryList">
+            <NavItem eventKey="deliveryListing">
             <NavText>
                 Delivery Listing
             </NavText>
@@ -157,12 +159,12 @@ export default function Sidebar() {
             <NavText>
                 After Sales Service
             </NavText>
-            <NavItem eventKey="afterSalesAppointment">
+            <NavItem eventKey="aftersalesservice">
             <NavText>
             ASM Appointment
             </NavText>
             </NavItem> 
-            <NavItem eventKey="afterSalesListing">
+            <NavItem eventKey="afterSalesServicelisting">
             <NavText>
             After Sales Service Listing
             </NavText>
