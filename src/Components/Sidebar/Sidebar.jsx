@@ -1,171 +1,174 @@
 import React from 'react'
+import SideNav,{Toggle, NavItem, NavIcon, NavText} from '@trendmicro/react-sidenav';
+import "@trendmicro/react-sidenav/dist/react-sidenav.css"
 import "./Sidebar.css"
-import InventoryIcon from '@mui/icons-material/Inventory';
-import ListIcon from '@mui/icons-material/List';
-import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { Link } from 'react-router-dom'
-import ReceiptIcon from '@mui/icons-material/Receipt';
-import DiscountIcon from '@mui/icons-material/Discount';
-import PaymentIcon from '@mui/icons-material/Payment';
-import PaidIcon from '@mui/icons-material/Paid';
-import ContactlessIcon from '@mui/icons-material/Contactless';
-import LocalShippingIcon from '@mui/icons-material/LocalShipping';
-import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
-import HomeIcon from '@mui/icons-material/Home';
-import HowToRegIcon from '@mui/icons-material/HowToReg';
 
 export default function Sidebar() {
   return (
-    <div className='sidebar'> 
-        <div className="sidebarWarapper">
-            <div className="sidebarMenu"></div>
-            <h2 className="sidebarTitle">DD Lab Admin Dashboard</h2>
-            <ul className="sidebarList">
-            <Link to="/home" className='link'>
-                <li className="sidebarListItem active">
-                <HomeIcon className='sidebarIcon'/>
+   <SideNav
+    onSelect={(selected) => {
+        // Add your code here
+        console.log(selected)
+    }}
+    className="Mysidebar"
+> 
+<SideNav.Toggle />
+<SideNav.Nav defaultSelected="home">
+        <NavItem eventKey="home">
+            <NavIcon>
+                <i className="fa fa-fw fa-home" style={{ fontSize: '1.5em' }} />
+            </NavIcon>
+            <NavText>
                 Home
-                </li>
-            </Link>
-            </ul>
-            <div className="sidebarMenu"></div>
-            <h3 className="sidebarTitle">Product</h3>
-            <ul className="sidebarList">
-                <Link to="/addproduct" className='link'>
-                <li className="sidebarListItem">
-                <InventoryIcon className='sidebarIcon'/>
-                 Product
-                </li>
-                </Link>
-                <Link to="/productListing" className='link'>
-                <li className="sidebarListItem">
-                <ListIcon className='sidebarIcon'/>
-                Product Listing
-                </li>
-                </Link>
-            </ul>
-            <div className="sidebarMenu"></div>
-            <h3 className="sidebarTitle">Distributor</h3>
-            <ul className="sidebarList">
-            <Link to="/adddistributor" className='link'>
-                <li className="sidebarListItem">
-                <HowToRegIcon className='sidebarIcon'/>
-                 Registration
-                </li>
-                </Link>
-                <Link to="/distributorlisting" className='link'>
-                <li className="sidebarListItem">
-                <ListIcon className='sidebarIcon'/>
-                Registration Listing
-                </li>
-                </Link>
-            </ul>
-            <div className="sidebarMenu"></div>
-            <h3 className="sidebarTitle">Sales</h3>
-            <ul className="sidebarList">
-            <Link to="/sales" className='link'>
-                <li className="sidebarListItem">
-                <BookmarkBorderIcon className='sidebarIcon'/>
+            </NavText>
+        </NavItem>
+        <NavItem eventKey="product">
+            <NavIcon>
+            <i class="fa-sharp fa-solid fa-star" style={{ fontSize: '1.5em' }}></i>
+            </NavIcon>
+            <NavText>
+                Product
+            </NavText>
+            <NavItem eventKey="AddProduct">
+            <NavText>
+                Add Product
+            </NavText>
+            </NavItem> 
+            <NavItem eventKey="ProductList">
+            <NavText>
+                Product listing
+            </NavText>
+            </NavItem> 
+        </NavItem>
+        <NavItem eventKey="distributor">
+            <NavIcon>
+            <i class="fa-solid fa-building-circle-arrow-right" style={{ fontSize: '1.5em' }}></i>
+            </NavIcon>
+            <NavText>
+                Distributor
+            </NavText>
+            <NavItem eventKey="AddDiss">
+            <NavText>
+                Add Distributor
+            </NavText>
+            </NavItem> 
+            <NavItem eventKey="DisList">
+            <NavText>
+                Distributor listing
+            </NavText>
+            </NavItem> 
+        </NavItem>
+        <NavItem eventKey="sales">
+            <NavIcon>
+            <i class="fa-brands fa-salesforce" style={{ fontSize: '1.5em' }}></i>
+            </NavIcon>
+            <NavText>
+                Sales
+            </NavText>
+            <NavItem eventKey="OrderCart">
+            <NavText>
                 Order Cart
-                </li>
-            </Link>
-            <Link to="/purchaseorder" className='link'>
-                <li className="sidebarListItem">
-                <ShoppingCartIcon className='sidebarIcon'/>
-                 Purchase Order
-                </li>
-            </Link>
-            <Link to="/purchaseorderlisting" className='link'>
-                <li className="sidebarListItem">
-                <ListIcon className='sidebarIcon'/>
+            </NavText>
+            </NavItem> 
+            <NavItem eventKey="PurchaseOrder">
+            <NavText>
+                Purchase Order
+            </NavText>
+            </NavItem> 
+            <NavItem eventKey="PoList">
+            <NavText>
                 Purchase Order Listing
-                </li>
-            </Link>
-            <Link to="/createInvoice" className='link'>
-                <li className="sidebarListItem">
-                <ReceiptIcon className='sidebarIcon'/>
-                 Invoice
-                </li>
-            </Link>
-            <Link to="/invoicelisting" className='link'>
-                <li className="sidebarListItem">
-                <ListIcon className='sidebarIcon'/>
-                Invoice Listing
-                </li>
-            </Link>
-            </ul>
-            <div className="sidebarMenu"></div>
-            <h3 className="sidebarTitle">Marketing</h3>
-            <ul className="sidebarList">
-            <Link to="/createCoupon" className='link'>
-                <li className="sidebarListItem">
-                <DiscountIcon className='sidebarIcon'/>
-                Coupon
-                </li>
-            </Link>
-            <Link to="/couponlisting" className='link'>
-                <li className="sidebarListItem">
-                <ListIcon className='sidebarIcon'/>
-                Coupon Listing
-                </li>
-            </Link>
-            </ul>
-            <div className="sidebarMenu"></div>
-            <h3 className="sidebarTitle">Payment</h3>
-            <ul className="sidebarList">
-            <Link to="/payment" className='link'>
-                <li className="sidebarListItem">
-                <PaymentIcon className='sidebarIcon'/>
+            </NavText>
+            </NavItem> 
+            <NavItem eventKey="Invoice">
+            <NavText>
+               Invoice
+            </NavText>
+            </NavItem> 
+            <NavItem eventKey="InvoiceList">
+            <NavText>
+               Invoice Listing
+            </NavText>
+            </NavItem> 
+        </NavItem>
+        <NavItem eventKey="marketing">
+            <NavIcon>
+            <i class="fa-regular fa-lightbulb" style={{ fontSize: '1.5em' }}></i>
+            </NavIcon>
+            <NavText>
+                Marketing
+            </NavText>
+            <NavItem eventKey="coupon">
+            <NavText>
+               Coupon
+            </NavText>
+            </NavItem> 
+            <NavItem eventKey="CouponList">
+            <NavText>
+               Coupon Listing
+            </NavText>
+            </NavItem> 
+        </NavItem>
+        <NavItem eventKey="payment">
+            <NavIcon>
+            <i class="fa-solid fa-money-check-dollar" style={{ fontSize: '1.5em' }}></i>
+            </NavIcon>
+            <NavText>
                 Payment
-                </li>
-            </Link>
-            <Link to="/onlinepaymentListing" className='link'>
-                <li className="sidebarListItem">
-                <ContactlessIcon className='sidebarIcon'/>
-                Online Payment Listing
-                </li>
-            </Link>
-            <Link to="/offlinepaymentListing" className='link'>
-                <li className="sidebarListItem">
-                <PaidIcon className='sidebarIcon'/>
-                Offline Payment Listing
-                </li>
-            </Link>
-            </ul>
-            <div className="sidebarMenu"></div>
-            <h3 className="sidebarTitle">Delivery</h3>
-            <ul className="sidebarList">
-            <Link to="/delivery" className='link'>
-                <li className="sidebarListItem">
-                <LocalShippingIcon className='sidebarIcon'/>
-                 Delivery Order
-                </li>
-            </Link>
-            <Link to="/deliverylisting" className='link'>
-                <li className="sidebarListItem">
-                <ListIcon className='sidebarIcon'/>
+            </NavText>
+            <NavItem>
+            <NavText>
+               Payment
+            </NavText>
+            </NavItem> 
+            <NavItem eventKey="OnlinePay">
+            <NavText>
+               Online Payment Listing
+            </NavText>
+            </NavItem> 
+            <NavItem eventKey="OffLinePay">
+            <NavText>
+               Offline Payment Listing
+            </NavText>
+            </NavItem> 
+        </NavItem>
+        <NavItem eventKey="delivery">
+            <NavIcon>
+            <i class="fa-solid fa-truck" style={{ fontSize: '1.5em' }}></i>
+            </NavIcon>
+            <NavText>
+                Delivery
+            </NavText>
+            <NavItem eventKey="DeliveryOrder">
+            <NavText>
+                Delivery Order
+            </NavText>
+            </NavItem> 
+            <NavItem eventKey="DeliveryList">
+            <NavText>
                 Delivery Listing
-                </li>
-            </Link>
-            </ul>
-            <div className="sidebarMenu"></div>
-            <h3 className="sidebarTitle">After Sales service</h3>
-            <ul className="sidebarList">
-            <Link to="/AfterSalesService" className='link'>
-                <li className="sidebarListItem">
-                <HomeRepairServiceIcon className='sidebarIcon'/>
-                ASM Appointment
-                </li>
-            </Link>
-            <Link to="/AfterSalesServiceListing" className='link'>
-                <li className="sidebarListItem">
-                <ListIcon className='sidebarIcon'/>
-                ASM Listing
-                </li>
-            </Link>
-            </ul>
-        </div>
-    </div>
+            </NavText>
+            </NavItem> 
+        </NavItem>
+        <NavItem eventKey="afterSales">
+            <NavIcon>
+            <i class="fa-brands fa-ups" style={{ fontSize: '1.9em' }}></i>
+            </NavIcon>
+            <NavText>
+                After Sales Service
+            </NavText>
+            <NavItem eventKey="afterSalesAppointment">
+            <NavText>
+            ASM Appointment
+            </NavText>
+            </NavItem> 
+            <NavItem eventKey="afterSalesListing">
+            <NavText>
+            After Sales Service Listing
+            </NavText>
+            </NavItem> 
+        </NavItem>
+    </SideNav.Nav>
+    </SideNav>
   )
 }

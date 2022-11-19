@@ -1,42 +1,8 @@
-.sidebar{
-    flex: 1;
-    height: 100%;
+.Mysidebar{
     position: sticky;
     background-color: rgb(64, 64, 64);
+    color: white;
     top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
 }
-.sidebarWarapper{
-    padding: 20px;
-    color: White;
-}
-.sidebarMenu{
-    margin-bottom: 10px;   
-}
-.sidebarTitle{
-    font-size: 13px;
-    color: rgb(255,250,200);
-    padding: 0px;
-}
-.sidebarList{
-    list-style: none;
-    padding: 2px;
-}
-.sidebarListItem{
-    padding: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-}
-.sidebarListItem.active, 
-.sidebarListItem:hover{
-    background-color: rgb(104, 103, 103);
-}
-.sidebarIcon{
-    margin-right: 5px;
-    font-size: 20px !important;
-}
-.link{
-    text-decoration: none;
-    color: inherit;
-  }
