@@ -127,6 +127,7 @@ export default function Product(){
                     </select>
                     </div>
                     <div className='newProductItem-1-button'>
+            
             <button className='buttondisplay' onClick={AddField}>Save</button>
             <button className='buttondisplay' onClick={ResetField}>Cancel</button>
             </div>

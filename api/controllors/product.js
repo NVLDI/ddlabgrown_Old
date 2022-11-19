@@ -12,5 +12,5 @@ export const addproduct = (req,res)=>{
 };
 export const listproduct = (req,res)=>{
     //TODO
-    //insert data into produuct list
+    //insert data into product list
 };

@@ -20,142 +20,137 @@ export default function Distributor(){
         <div className="container">
         <Sidebar/>
         <div className="Distributor">
-        <div>
-         <div>
-            <h2 className='RegClient'>
-                Distributor Registration
-            </h2>
-        </div>
-        <h3 className='RegClientNo'>Distributor No: D-00000001</h3>
-        <form className='form-display'>
-        <div className="column newDistributorItem-1">
-        <h4 className='RegWidgetClient-sub'>Personal Details</h4>
-        <div className='newDistributorItem-1'>
-            <label>First Name</label>
-            <input type="text" placeholder=""/>                                
-        </div>
-        <div className='newDistributorItem-1'>
-            <label>Last Name</label>
-            <input type="text" placeholder=""/>                                
-        </div>
-        <div className='newDistributorItem-1'>
-            <label>NIC No</label>
-            <input type="text" placeholder=""/>                                
-        </div>
-        <div className='newDistributorItem-1'>
-            <label>Address 1</label>
-            <input type="text" placeholder=""/>                                
-        </div>
-        <div className='newDistributorItem-1'>
-            <label>Address 2</label>
-            <input type="text" placeholder=""/>                                
-        </div>
-        <div className='newDistributorItem-1'>
-            <label>State</label>
-            <select>
-                <option value='1'>None</option>
-            </select>                            
-        </div>
-        <div className='newDistributorItem-1'>
-        <label>Country</label>
-            <select>
-                <option value='1'>None</option>
-            </select>                             
-        </div>
-        <div className='newDistributorItem-1'>
-            <label>Zip Code</label>
-            <input type="text" placeholder=""/>                              
-        </div>
-        </div>
-        <div className="column newDistributorItem-1">
-        <h4 className='RegWidgetClient-sub'>Login & Verification Details</h4>
-        <div className='newDistributorItem-1'>
-            <label>User Name</label>
-            <input type="text" placeholder=""/>                                
-        </div>
-        <div className='newDistributorItem-1'>
-            <label>Password</label>
-            <input type="text" placeholder=""/>                                
-        </div>
-        <div className='newDistributorItem-1'>
-            <label>Confirm Password</label>
-            <input type="text" placeholder=""/>                                
-        </div>
-        <div className='newDistributorItem-1'>
-            <label>Phone No</label>
-            <input type="text" placeholder=""/>                                
-        </div>
-        <div className='newDistributorItem-1'>
-            <label>Phone Verification</label>
-            <input type="text" placeholder=""/>                                
-        </div>
-        <div className='newDistributorItem-1'>
-            <label>E-Mail</label>
-            <input type="text" placeholder=""/>                                
-        </div>
-        <div className='newDistributorItem-1'>
-            <label>E-Mail Verification</label>
-            <input type="text" placeholder=""/>                                
-        </div>
-        <div className='newDistributorItem-1'>
-        <label>Occupation</label>
-            <select>
-                <option value='1'>None</option>
-            </select>                             
-        </div>
-        </div>
-        <div className=' column newDistributorItem-1'>
-            <h4 className='RegWidgetClient-sub'>Bank Details</h4>
-            <div className='newDistributorItem-1'>
-            <label>Bank Name</label>
-            <input type="text" placeholder=""/>   
-            </div>
-            <div className='newDistributorItem-1'>
-            <label>Account No</label>
-            <input type="text" placeholder=""/>   
-            </div>
-            <div className='newDistributorItem-1'>
-            <label>Shift Code</label>
-            <input type="text" placeholder=""/>   
-            </div>
-            <div className='newDistributorItem-1'>
-            <label>Bank Address #1</label>
-            <input type="text" placeholder=""/>   
-            </div>
-            <div className='newDistributorItem-1'>
-            <label>Bank Address #2</label>
-            <input type="text" placeholder=""/>   
-            </div>
-            <div className='newDistributorItem-1'>
-        <label>Country</label>
-            <select>
-                <option value='1'>None</option>
-            </select>                             
-            </div>
-            </div>
-            <div className=' column newDistributorItem-Referal'>
-            <h4 className='RegWidgetClient-sub'>Referral Code</h4>
-            <div className='newDistributorItem-1'>
-            <label>Referral Code</label>
-            <input type="text" placeholder=""/>   
-            </div>
-            <div className='newDistributorItem-1'>
-            <label>Sponsor's Name</label>
-            <input type="text" placeholder=""/>   
-            </div>
-            <div className='newDistributorItem-1'>
-            <label>Contact No</label>
-            <input type="text" placeholder=""/>   
-            </div>
-            <div className='newDistributorItem-1-button'>
-        <button className='buttondisplay'>Save</button>
-        <button className='buttondisplay'>Cancel</button>
-        </div>
-        </div> 
-        </form>
-    </div>
+                    <h2 className="DistributorClient">Distributor Regestration</h2>
+                    <div className="DistributorAmendWidgetClient">
+                    <form className="newDistributorForm">
+                        <div className="newDistributorItem">
+                                <label>Distributor No</label>
+                                <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                
+                        </div>
+                        <div className="newDistributorItem">
+                                <label>Date</label>
+                                <input type="text" placeholder="Date" value={Current}/>
+                        </div>
+                        </form>
+                        </div>
+                        
+                        <h4 className="DeliveryWidgetClient-sub">Personal Details</h4>
+                        <div className="DistributorAmendWidgetClient">
+                        <form className="newDeliveryForm-con">
+                        <div className="newDistributorItem">
+                                <label className="namedefine">First Name</label>
+                                <input type="text" placeholder=""/>
+                                <label className="namedefine">Last Name</label>
+                                <input type="text" placeholder=""/>
+                                <label className="namedefine">Occupation</label>
+                                <select id="example" class="autocomplete">
+                                <option value="1">None</option>
+                                </select>
+                                
+                                
+                        </div>
+                        <div className="newDistributorItem">
+                        <label className="namedefine">NIC No</label>
+                                <input type="text" placeholder=""/>
+                                <label className="namedefine">Address 1</label>
+                                <input type="text" placeholder=" "/>
+                                <label className="namedefine">Address 2</label>
+                                <input type="text" placeholder=""/>
+                                
+                        </div>
+                       
+                        <div className="newDistributorItem">
+                        <label className="namedefine">State</label>
+                                <select id="example" class="autocomplete">
+                                <option value="1">None</option>
+                                </select>
+                                <label className="namedefine">Zip Code</label>
+                                <input type="text" placeholder=""/>
+                                <label className="namedefine">Country</label>
+                                <select id="example" class="autocomplete">
+                                <option value="1">None</option>
+                                </select>
+                        </div>
+                        </form>
+                        </div>
+                        <h4 className="DeliveryWidgetClient-sub">Login & Verification Details</h4>
+                        <div className="DistributorAmendWidgetClient">
+                        <form className="newDeliveryForm-con">
+                        <div className="newDistributorItem">
+                        <label className="namedefine">Username</label>
+                                <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                                <label className="namedefine">Password</label>
+                                <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                                <label className="namedefine">Confirm Password</label>
+                                <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                        <label>Phone Number</label>
+                                <input type="text" placeholder=""/>
+                                <label className="namedefine">Phone Verification Code</label>
+                                <input type="text" placeholder=""/>
+                                
+                        </div>
+                        <div className="newDistributorItem">
+                                <label>E-mail</label>
+                                <input type="text" placeholder=""/>
+                                <label className="namedefine">Email Verification Code</label>
+                                <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                               
+                        </div>
+                        <div className="newDistributorItem">
+                                <label>Account Number</label>
+                                <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                                <label>Confirm Account Number</label>
+                                <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                                <label>Shift Code</label>
+                                <input type="text" placeholder=""/>
+                        </div>
+                        </form>
+                    </div>
+                    <h4 className="DeliveryWidgetClient-sub">Referral Code</h4>
+                        <div className="DistributorAmendWidgetClient">
+                        <form className="newDeliveryForm-con">
+                        <div className="newDistributorItem">
+                                <label className="namedefine">Referral code</label>
+                                <input type="text" placeholder=""/>
+                        </div>
+                        <div className="newDistributorItem">
+                                <label className="namedefine">Sponsor's Firstname</label>
+                                <input type="text" placeholder="" disabled/>
+                        </div>
+                        <div className="newDistributorItem">
+                                <label className="namedefine">Contact No</label>
+                                <input type="text" placeholder="" disabled/>
+                        </div>
+                        <div className="newDistributorItem">
+                              
+                        </div>
+                        <button className="distributorCreateButton" onClick={navigateDistributor}>Update</button>
+                        <button className="distributorClearButton">Cancel</button>
+                        </form>
+                        </div>
+                        
+                        
+                        
+                        
+                    
                 </div>
-                </div>
-                </div>
+                
+        </div>
+        </div>
     )
 }

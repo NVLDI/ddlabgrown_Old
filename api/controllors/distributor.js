@@ -20,10 +20,6 @@ const hashedPassword = bcrypt.hashSync (req. body. password, salt);
     });
     });
 };
-export const listdistributor = (req,res)=>{
-    //TODO
-    //insert data into Distributor list
-};
 export const dislogin = (req,res)=>{
     //TODO
     //insert data into Distributor list
