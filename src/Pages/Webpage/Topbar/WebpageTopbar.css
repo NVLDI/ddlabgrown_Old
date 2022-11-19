@@ -1,5 +1,4 @@
 .topbar{
-    width: 100%;
     height: 50px;
     background-color: rgb(64, 64, 64);
     position: sticky;
@@ -15,7 +14,7 @@
 }
 .logo{
     font-weight: normal;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     cursor: pointer;
 }
@@ -50,3 +49,8 @@
     border-radius: 50%;
     cursor: pointer;
 }
+.vl {
+    border-left: 1px solid rgb(214, 214, 214);
+    height: 10px;
+    padding: 5px;
+  }

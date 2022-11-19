@@ -12,7 +12,7 @@ export default function DistributorLogin() {
     const navigateDistributor = () => {
       if((distributor_txt === 'keensk')&&(password_txt === 'keensk123'))
       {
-        navigate('/');
+        navigate('/distributorHomepage');
       }
       else
       {

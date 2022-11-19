@@ -1,7 +1,7 @@
-import "./WepageTopbar.css"
+import "./WebpageTopbar.css"
 import { Link } from 'react-router-dom'
 
-export default function WepageTopbar() {
+export default function WebpageTopbar() {
   return (
     <div className="topbar">
     <div className="topbarWrapper">
