@@ -47,7 +47,7 @@ export default function Distributor(){
           const handleClick= async(e)=>{
             e.preventDefault()
             try {
-              await axios.post("http://localhost:8800/api/distributor/disregister",inputs)
+              await axios.post("http://localhost:8800/api/distributorFull/Fullregister",inputs)
             } 
             catch (error){  
               setError(error.response.data);
@@ -60,9 +60,9 @@ export default function Distributor(){
         <div className="container">
         <Sidebar/>
         <div className="Distributor">
-                    <h2 className="DistributorClient">Distributor Registration</h2>
-                    <div><Container>
+    <div><Container>
     <Paper elevation={3} style={paperStyle}>
+    <h2>Distributor Registration</h2>
 <Box
 component="form"
 sx={{
@@ -96,7 +96,7 @@ name="state"
 onChange={handleChange}
 />
 <TextField id="outlined-basic" label="Country" variant="outlined" fullWidth
-name="nic_no"
+name="country"
 onChange={handleChange}
 />
 <TextField id="outlined-basic" label="Zip Code" variant="outlined" fullWidth

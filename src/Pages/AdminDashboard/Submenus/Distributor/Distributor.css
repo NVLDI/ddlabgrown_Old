@@ -6,13 +6,11 @@
     margin: 0px;
   }
 .DistributorClient{
-    display: flex;
-    margin: 20px 40px;
     color:rgb(125, 125, 125);
 }
 .DistributorAmendWidgetClient{
     display: flex;
-    margin: 20px 90px;
+    margin: 20px 0px;
 }
 .newDistributorForm{
     display: flex;
