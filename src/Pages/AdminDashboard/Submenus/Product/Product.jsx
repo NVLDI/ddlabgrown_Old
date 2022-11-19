@@ -54,8 +54,7 @@ export default function Product(){
                     <div className="newproductItem">
                     <div className="ProductUpload">
             <img className="ProductImg" src="" alt="" />
-            <label htmlFor="file"><Publish/></label>
-            <input className="namedefine" type="file" id="file" style={{display:"none"}}/>
+            <input className="namedefine" type="file" id="file"/>
             </div>
                     </div>
                     <div className="newproductItem">
@@ -127,7 +126,6 @@ export default function Product(){
                     </select>
                     </div>
                     <div className='newProductItem-1-button'>
-            
             <button className='CreateButton' onClick={AddField}>Save</button>
             <button className='ClearButton' onClick={ResetField}>Cancel</button>
             </div>

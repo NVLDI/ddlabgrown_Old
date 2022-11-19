@@ -22,7 +22,7 @@ export default function AfterSalesService(){
             <h2 className="AfterSalesServiceWidgetClient">After Sales Maintenance</h2>
             <div className="AfterSalesServiceClient">
             <form className="newAfterSalesServiceForm">
-            <div className="newAfterSalesServiceItem">
+                        <div className="newAfterSalesServiceItem">
                                 <label>Atfer Sales Maintenance No</label>
                                 <input type="text" placeholder=""/>
                         </div>
@@ -30,8 +30,7 @@ export default function AfterSalesService(){
                                 
                         </div>
                         <div className="newAfterSalesServiceItem">
-                                <label>Date</label>
-                                <input type="text" placeholder="Date" value={Current}/>
+                               
                         </div>
             </form>
             </div>

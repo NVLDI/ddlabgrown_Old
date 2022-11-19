@@ -19,16 +19,6 @@ export default function Payment(){
                     <div className="PaymentWidgetClient">
                         <form className="newPaymentForm">
                         <div className="newPaymentItem">
-                                
-                        </div>
-                        <div className="newPaymentItem">
-                
-                        </div>
-                        <div className="newPaymentItem">
-                                <label>Date</label>
-                                <input type="text" placeholder="Date" value={Current}/>
-                        </div>
-                        <div className="newPaymentItem">
                                 <label>Transcation No</label>
                                 <input type="text" placeholder=""/>
                                 <label className="namedefine">Invoice No</label>

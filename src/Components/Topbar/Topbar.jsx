@@ -4,7 +4,14 @@ import {NotificationsNone, Language,Settings} from '@mui/icons-material/';
 import { Link } from 'react-router-dom';
 import Tooltip from '@mui/material/Tooltip';
 
-export default function Topbar() {
+export default function Topbar() 
+  {
+    let ts = Date.now();
+  let date_ob = new Date(ts);
+  let date = date_ob.getDate();
+  let month = date_ob.getMonth() + 1;
+  let year = date_ob.getFullYear();
+  let Current = date+"/"+month+ "/"+year;
   return (
     <div className="topbar">
       <div className="topbar">
@@ -13,6 +20,7 @@ export default function Topbar() {
           <span className="logo">DD Lab Grown Diamond</span>
         </div>
         <div className="topRight">
+        <label className="time">{Current}</label>
         <Tooltip title="Notification">
           <div className="topbarIconContainer">
             <NotificationsNone />

@@ -24,20 +24,6 @@ export default function Delivery(){
                     <div className="DeliveryWidgetClient">
                     <form className="newDeliveryForm">
                         <div className="newDeliveryItem">
-                        
-                        </div>
-                        <div className="newDeliveryItem">
-                               
-                        </div>
-                        <div className="newDeliveryItem">
-                                <label>Date</label>
-                                <input type="text" placeholder="Date" value={Current}/>
-                        </div>
-                    </form>
-                    </div>
-                    <div className="DeliveryWidgetClient">
-                    <form className="newDeliveryForm">
-                        <div className="newDeliveryItem">
                                 <label>Delivery No</label>
                                 <input type="text" placeholder=""/>
                         </div>

@@ -49,3 +49,9 @@
       border-radius: 50%;
       cursor: pointer;
   }
+  .time
+  {
+    color: white;
+    font-weight: bold;
+    margin-right: 40px;
+  }

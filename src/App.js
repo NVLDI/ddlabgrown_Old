@@ -45,13 +45,14 @@ import Error from "./Pages/Error/404Page";
 
 import AdminReg from './Pages/AdminLogin/AdminRegistration'
 import SimpleDistributorReg from './Pages/DistributorLogin/SimpleDistributorReg'
+import Shopping from "./Pages/Webpage/Shopping/Shopping"
 function App() {
   return (
     <Router>
      
       <Routes>
       <Route exact path="/adminprofile" element={<AdminProfile/>}/>
-
+      <Route exact path="/shopping" element={<Shopping/>}/>
       <Route exact path="/distributorprofile" element={<DistributerProfile/>}/>
       <Route exact path="/simpleDistributorReg" element={<SimpleDistributorReg/>}/>
       <Route exact path="/" element={<Display/>}/>

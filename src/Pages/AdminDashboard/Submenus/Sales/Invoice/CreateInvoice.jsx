@@ -68,6 +68,7 @@ export default function CreateInvoice() {
           <h2 className="createInvoiceClient">Invoice</h2>
           <div className='createInvoiceWidgetClient'>
           <form className="newInvoiceForm">
+        
                         <div className="newInvoiceItem">
                         <label>Invoice No</label>
                         <input type="text" placeholder=""/>
@@ -76,8 +77,7 @@ export default function CreateInvoice() {
                 
                         </div>
                         <div className="newInvoiceItem">
-                                <label>Date</label>
-                                <input type="text" placeholder="Date" value={Current}/>
+                               
                         </div>
                         <div className="newInvoiceItem">
                                 <label>Purchase Order No</label>

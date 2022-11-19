@@ -25,16 +25,6 @@ export default function CreateCoupon(){
                 <div className="CreateCouponWidgetClient">
                 <form className="CreateCouponForm">
                         <div className="CreateCouponItem">
-                        
-                        </div>
-                        <div className="CreateCouponItem">
-                        
-                        </div>
-                        <div className="CreateCouponItem">
-                        <label>Date</label>
-                        <input type="text" placeholder="Date" value={Current}/>
-                        </div>
-                        <div className="CreateCouponItem">
                                 <label>Coupon Code</label>
                                 <input type="text" placeholder=""/>
                                 <label className="namedefine">Coupon Copy's</label>

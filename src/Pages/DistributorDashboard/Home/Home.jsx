@@ -11,11 +11,6 @@ export default function Distributor() {
          <div className="Display">
            <Content/>
         </div>
-        <Link to="/" className='link'>
-      <div className="topbarIconsContainer">
-            Shopping
-          </div>
-        </Link>
     </div>
   )
 }

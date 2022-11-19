@@ -68,8 +68,7 @@ export default function PurchaseOrder() {
 
                         </div>
                         <div className="newPurchaseAmendItem">
-                                <label>Date</label>
-                                <input type="text" placeholder="Date" value={Current}/>  
+                              
                         </div>
                         </form>
         </div>
