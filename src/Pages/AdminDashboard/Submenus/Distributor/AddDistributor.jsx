@@ -136,11 +136,10 @@ export default function Distributor(){
                                 <label className="namedefine">Contact No</label>
                                 <input type="text" placeholder="" disabled/>
                         </div>
-                        <div className="newDistributorItem">
-                              
-                        </div>
+                        <div className='newDistributorItem-1-button'>
                         <button className="distributorCreateButton" onClick={navigateDistributor}>Save</button>
-                        <button className="distributorClearButton">Cancel</button>
+                        <button className="distributorCloseButton">Cancel</button>
+                        </div>
                         </form>
                         </div>
                         

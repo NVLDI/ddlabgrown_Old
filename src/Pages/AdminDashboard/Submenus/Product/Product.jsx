@@ -128,8 +128,8 @@ export default function Product(){
                     </div>
                     <div className='newProductItem-1-button'>
             
-            <button className='buttondisplay' onClick={AddField}>Save</button>
-            <button className='buttondisplay' onClick={ResetField}>Cancel</button>
+            <button className='CreateButton' onClick={AddField}>Save</button>
+            <button className='ClearButton' onClick={ResetField}>Cancel</button>
             </div>
             </form>
             {error && error}
